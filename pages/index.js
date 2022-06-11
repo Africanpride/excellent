@@ -8,12 +8,15 @@ import Layout from './components/layout'
 
 export default function Home() 
 {
+  <p>{process.env.NEXT_PUBLIC_SERVER_ID}</p>
+
   return (
     <>
     <main className='flex justify-center items-center h-screen w-full bg-black md:mx-auto  px-4'>
      <div className='  text-4xl  text-center capitalize  text-pink-600 font-sans bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 font-bold  md:text-2xl  lg:text-5xl'>
        Welcome to  <br /> 
-       <div className="text-md text-bold text-8xl">Excel-Travel</div> 
+       <div className="text-md text-bold text-8xl"> { process.env.NEXT_PUBLIC_ENV_APP_NAME }</div> <br />
+
      
     </div>
    </main>
@@ -22,10 +25,3 @@ export default function Home()
   )
 }
 
-Home.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-      {page}
-    </Layout>
-  )
-}

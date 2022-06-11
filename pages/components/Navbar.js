@@ -1,28 +1,58 @@
 import Head from 'next/head'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import {useEffect,useState } from 'react'
+import * as flagIcons from 'flag-icons'
+
+import { useRouter } from 'next/router'
 
 
-function Navbar() {
+export default function Navbar() {
+  
+  const { asPath, pathname } = useRouter();
+  console.log(asPath); 
+
   return (
     <>
-    <header className="text-gray-400 bg-gray-900 body-font">
-  <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+    <header id='MainNav' className="text-gray-400 bg-transparent body-font fixed top-0 w-full shadow-sm">
+    <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
 
-      <span className="ml-3 text-xl">Excel Travel Services</span>
-    </a>
-    <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <Link href="/" ><a className="mr-5 hover:text-white">Home</a></Link>     
-      <Link href="/about" ><a className="mr-5 hover:text-white">About</a></Link>     
-      <Link href="/flights" ><a className="mr-5 hover:text-white">Flights</a></Link>     
+        <span> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+  </svg>
 
-    </nav>
-    <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Book Now
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        </span>
+
+        <span className="ml-3 text-xl">Excel Travel Services</span>
+      </a>
+      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <Link href="/" ><a className="mr-5 hover:text-white">Home</a></Link>     
+        <Link href="/about" ><a className="mr-5 hover:text-white">About</a></Link>     
+        <Link href="/locale" ><a className="mr-5 hover:text-white">Local</a></Link>     
+        <Link href="/flights" ><a className="mr-5 hover:text-white">Flights</a></Link>     
+
+      </nav>
+
+    
+
+      <div className='flex justify-center items-center'>
+      <Link href={asPath} locale="en">
+      <a><span className="fi fi-gb mr-2"></span> </a>
+      </Link> 
+      <Link href={pathname} locale="fr">
+      <a><span className="fi fi-fr mr-2"></span></a>
+      </Link>
+              
+      <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Book Now 
+      <svg  xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
-    </button>
+
+      </button>
+      </div>
   </div>
 </header>
     
@@ -32,4 +62,3 @@ function Navbar() {
   )
 }
 
-export default Navbar;
