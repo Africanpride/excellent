@@ -8,8 +8,7 @@ import Layout from './components/layout'
 
 export default function Home() 
 {
-  <p>{process.env.NEXT_PUBLIC_SERVER_ID}</p>
-
+  
   return (
     <>
     <main className='flex justify-center items-center h-screen w-full bg-black md:mx-auto  px-4'>

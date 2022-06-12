@@ -2,9 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from './components/Navbar'
 import Layout from './components/layout'
-
-
-
+import Script from 'next/script'
 import styles from '../styles/Home.module.css'
 
 export default function About() 
@@ -23,10 +21,3 @@ export default function About()
   )
 }
 
-About.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-      {page}
-    </Layout>
-  )
-}

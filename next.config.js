@@ -10,13 +10,14 @@ module.exports = {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
   },  
-/*   experimental: {
-    nextScriptWorkers: true,
-  }, */
+
   nextConfig,
   nextTranslate,
   images: {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  }
+  },
+  // env: {
+  //   rawJsFromFile: fs.readFileSync('./test.js').toString()
+  // }
 }

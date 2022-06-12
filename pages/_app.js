@@ -33,19 +33,16 @@ export default function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page)
   
   return (
-    <> 
-    <Head>      
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>         
+    <>       
     <Layout>
      <Component {...pageProps} />
     </Layout>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <Script
+
+    {/* <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-      />
-      <Script
+      /> */}
+    {/* <Script
         id="gtag-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -58,7 +55,7 @@ export default function MyApp({ Component, pageProps }) {
             });
           `,
         }}
-      />
+      /> */}
       
     </>
   )
