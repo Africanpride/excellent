@@ -1,7 +1,11 @@
-// tailwind.config.js
 module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class',
   theme: {
-    extend: {
+    extend: { 
       colors: {
         navy: {
           '50':  '#f3f8f9',
@@ -124,7 +128,8 @@ module.exports = {
           '900': '#0c272a',
         },
         
-      }
-    }
-  }
+      },
+    },
+  },
+  plugins: [],
 }
