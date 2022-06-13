@@ -15,12 +15,12 @@ export default function Navbar({props}) {
   const [scrollY, setScrollY] = useState(0);
   const [fixed, setFixed] = useState("");
   const [background, setBackground] = useState("");
-
+  
   useEffect(() => {
     const watchScroll = () => {
-      window.addEventListener("scroll", logit);
+      window.addEventListener("scroll", getScroll);
     }
-    const logit = () => {
+    const getScroll = () => {
       setScrollY(window.pageYOffset);
     }
 
@@ -38,15 +38,24 @@ export default function Navbar({props}) {
     runSetFixed();
     runBackgroundColorLogic();
     return () => {
-      window.removeEventListener("scroll", logit);
+      window.removeEventListener("scroll", getScroll);
     };
   }, [fixed, scrollY, background]);
 
+
+  // capitalisze first string 
+
+  const capitalizeTitle = () => {
+
+    let pagetitle = pathname.slice(1);
+    return pagetitle = pagetitle.replace(/^(\w)(.+)/, (match, p1, p2) => p1.toUpperCase() + p2.toLowerCase());    
+  }
+  
   return (
     <>
 
     <Head>
-      <title>{process.env.NEXT_PUBLIC_ENV_APP_NAME } &#124;	 {pathname.slice(0, -1)}</title>
+      <title>{process.env.NEXT_PUBLIC_ENV_APP_NAME } &#124;	 {capitalizeTitle()}</title>
     </Head>
 
     <header id='MainNav'  className={`${background}  body-font  top-0 w-full  shadow-sm ${fixed}`}  >
