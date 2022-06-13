@@ -8,54 +8,41 @@ import * as flagIcons from 'flag-icons'
 import { useRouter } from 'next/router'
 
 
-export default function Navbar() {
+export default function Navbar({props}) {
   
   const { asPath, pathname } = useRouter();
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
 
-  const navbarStyles = {
-    position: 'fixed',
-    height: '80px',
-    width: '100%',
-    backgroundColor: 'grey',
-    textAlign: 'center'
-  }
+  const [scrollY, setScrollY] = useState(0);
+  const [fixed, setFixed] = useState("")
 
-  // new useEffect:
   useEffect(() => {
-    const handleScroll = () => {
-      // find current scroll position
-      const currentScrollPos = window.pageYOffset;
-  
-      // set state based on location info (explained in more detail below)
-      setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
-  
-      // set state to new scroll position
-      setPrevScrollPos(currentScrollPos);
-    }; 
-    window.addEventListener('scroll', handleScroll);
+    function watchScroll() {
+      window.addEventListener("scroll", logit);
+    }
+    function logit() {
+      setScrollY(window.pageYOffset);
+    }
 
-    return () => window.removeEventListener('scroll', handleScroll);
+   const doMagic = () => {
+    (scrollY > 100)? setFixed("fixed") : setFixed("");
+    }
 
-  }, [prevScrollPos, visible]);
-  // new function:
+    watchScroll();
+    doMagic();
+    return () => {
+      window.removeEventListener("scroll", logit);
+    };
+  }, [fixed, scrollY]);
 
-
-
+ 
   return (
     <>
 
-    <script id="run"
-        strategy="lazyOnload"
-            dangerouslySetInnerHTML={{
-              __html: `
-                      console.log('Finally ......... document 123');
-                  `,
-            }}
-          ></script>
+    <Head>
+      <title>{fixed}</title>
+    </Head>
 
-    <header id='MainNav' style={{ ...navbarStyles, top: visible ? '0' : '-60px' }} className="text-gray-400 bg-transparent body-font fixed top-0 w-full shadow-sm">
+    <header id='MainNav'  className='bg-slate-800 body-font  top-0 w-full shadow-sm fixed' >
     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
 
@@ -66,7 +53,7 @@ export default function Navbar() {
 
         </span>
 
-        <span className="ml-3 text-xl">Excel Travel Services</span>
+        <span className="ml-3 text-xl">Excel Travel Services </span>
       </a>
       <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
         <Link href="/" ><a className="mr-5 hover:text-white">Home</a></Link>     
