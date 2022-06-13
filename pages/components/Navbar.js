@@ -25,6 +25,7 @@ export default function Navbar({props}) {
 
    const doMagic = () => {
     (scrollY > 100)? setFixed("fixed") : setFixed("");
+    return fixed;
     }
 
     watchScroll();
@@ -42,7 +43,7 @@ export default function Navbar({props}) {
       <title>{fixed}</title>
     </Head>
 
-    <header id='MainNav'  className='bg-slate-800 body-font  top-0 w-full shadow-sm fixed' >
+    <header id='MainNav'  className={`bg-navy-900 body-font  top-0 w-full  shadow-sm ${fixed}`}  >
     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
 
