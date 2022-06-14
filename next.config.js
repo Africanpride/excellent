@@ -10,7 +10,9 @@ module.exports = {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
   },  
-
+  images: {
+    domains: ["cdn.pixabay.com","*.dummyimage.com"]
+},
   nextConfig,
   nextTranslate,
   images: {

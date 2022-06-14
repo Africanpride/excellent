@@ -58,7 +58,7 @@ export default function Navbar({props}) {
       <title>{process.env.NEXT_PUBLIC_ENV_APP_NAME } &#124;	 {capitalizeTitle()}</title>
     </Head>
 
-    <header id='MainNav'  className={`${background}  body-font  top-0 w-full  shadow-sm ${fixed}`}  >
+    <header id='MainNav'  className={`${background} z-30  body-font  top-0 w-full  shadow-sm ${fixed}`}  >
     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
 
@@ -71,11 +71,12 @@ export default function Navbar({props}) {
 
         <span className="ml-3 text-xl">Excel Travel Services </span>
       </a>
-      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-yellow-500">
+      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-blue-300">
         <Link href="/" ><a className="mr-5 hover:text-white">Home</a></Link>     
         <Link href="/about" ><a className="mr-5 hover:text-white">About</a></Link>     
+        <Link href="/bookings " ><a className="mr-5 hover:text-white">Bookings</a></Link>     
         <Link href="/locale" ><a className="mr-5 hover:text-white">Local</a></Link>     
-        <Link href="/scrolltest " ><a className="mr-5 hover:text-white">Scroll</a></Link>     
+        <Link href="/inquiries" ><a className="mr-5 hover:text-white">Inquiries</a></Link>     
         <Link href="/flights" ><a className="mr-5 hover:text-white">Flights</a></Link>     
 
       </nav>
