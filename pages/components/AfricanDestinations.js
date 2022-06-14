@@ -15,7 +15,7 @@ function AfricanDestinations() {
         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-3 text-gray-900 dark:text-white">Top African Travel Destinations</h1>
         <div className="h-1 w-20 bg-blue-900 dark:bg-blue-700 rounded"></div>
       </div>
-      <p className="lg:w-1/2 w-full leading-relaxed dark:text-gray-400 text-opacity-90">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      <p className="lg:w-1/2 w-full leading-relaxed dark:text-gray-400 text-opacity-90">From Banjul to Johannesburg, Africa boasts more World Heritage Sites than any other continent in the world. This Mediterranean gem offers one of the most famous and delicious cuisines in the world. Every city you travel to will give you an entirely different experience, with unique aspects to topography, cuisine, and scenery!</p>
     </div>
     <div className="flex flex-wrap -m-4">
       <div className="xl:w-1/4 md:w-1/2 p-4">

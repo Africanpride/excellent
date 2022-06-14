@@ -8,6 +8,12 @@ import * as gtag from '../lib/ga/gtag'
  // import Font Awesome CSS
  import "@fortawesome/fontawesome-svg-core/styles.css";
  import { config } from "@fortawesome/fontawesome-svg-core";
+
+
+ // Dark Mode
+ import { ThemeProvider } from "next-themes";
+
+
  config.autoAddCss = true;
 
 
@@ -33,10 +39,13 @@ export default function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page)
   
   return (
-    <>       
+    <>
+    <ThemeProvider enableSystem={true} attribute="class">  
     <Layout>
      <Component {...pageProps} />
     </Layout>
+    </ThemeProvider>
+
 
     {/* <Script
         strategy="afterInteractive"

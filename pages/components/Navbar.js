@@ -6,10 +6,31 @@ import * as flagIcons from 'flag-icons'
 
 import { useRouter } from 'next/router'
 
+import {useTheme} from "next-themes";
+import{SunIcon ,MoonIcon} from "@heroicons/react/solid";
+
 
 export default function Navbar({props}) {
   
-  
+  const {systemTheme , theme, setTheme} = useTheme ();
+
+  const renderThemeChanger= () => {
+
+      const currentTheme = theme === "system" ? systemTheme : theme ;
+
+      if(currentTheme ==="dark"){
+        return (
+          <SunIcon className="w-7 h-7 text-yellow-500 " role="button" onClick={() => setTheme('light')} />
+        )
+      }
+
+      else {
+        return (
+          <MoonIcon className="w-7 h-7 text-gray-500 " role="button" onClick={() => setTheme('dark')} />
+        )
+      }
+   };
+
   const { asPath, pathname } = useRouter();
 
   const [scrollY, setScrollY] = useState(0);
@@ -91,12 +112,19 @@ export default function Navbar({props}) {
       <a><span className="fi fi-fr mr-2"></span></a>
       </Link>
               
-      <button className="text-white inline-flex items-center bg-navy-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Book Now 
+      <button className="text-white inline-flex items-center bg-navy-900 border-0 py-1 px-4 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"> 
+      <Link href="/bookings">
+          <a>Book Now </a>
+      </Link>
       <svg  xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
 
       </button>
+
+      <div className='ml-3 rounded-full bg-opacity-95 border-2 border-opacity-80  '>
+      {renderThemeChanger()}
+      </div>
       </div>
   </div>
 </header>
