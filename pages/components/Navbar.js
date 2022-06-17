@@ -4,10 +4,15 @@ import Link from 'next/link'
 import {useEffect,useState } from 'react'
 import * as flagIcons from 'flag-icons'
 
+
 import { useRouter } from 'next/router'
 
 import {useTheme} from "next-themes";
-import{SunIcon ,MoonIcon} from "@heroicons/react/solid";
+import{SunIcon ,MoonIcon, ChevronRightIcon, ArrowCircleRightIcon} from "@heroicons/react/solid";
+import Logo from '../components/logo'
+
+
+
 
 
 export default function Navbar({props}) {
@@ -46,12 +51,12 @@ export default function Navbar({props}) {
     }
 
    const runSetFixed = () => {
-    (scrollY > 100)? setFixed("fixed") : setFixed("");
+    (scrollY > 100)? setFixed("fixed") : setFixed("absolute");
     return fixed;
     }
 
     const runBackgroundColorLogic =() => {
-      (scrollY > 100)? setBackground("bg-navy-900") : setBackground("bg-black");
+      (scrollY > 100)? setBackground("bg-navy-900") : setBackground("bg-transparent");
       return background;
     }
 
@@ -81,18 +86,18 @@ export default function Navbar({props}) {
 
     <header id='MainNav'  className={`${background} z-30  body-font  top-0 w-full  shadow-sm ${fixed}`}  >
     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-
-        <span> 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
-    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-  </svg>
-
-        </span>
-
-        <span className="ml-3 text-xl">Excel Travel Services </span>
-      </a>
-      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-blue-300">
+    <div className='inline-flex items-center justify-center'>
+    <div  className="pr-2">
+        <Link href="/">
+              <a>
+              <Logo />
+              </a>
+        </Link>
+    </div>
+      <div className="ml-3 text-xl pl-4 py-2 border-l border-navy-600 border-opacity-20 text-white">{process.env.NEXT_PUBLIC_ENV_APP_NAME}  <span className='text-base '>&trade;</span>
+      </div>
+    </div>
+      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-blue-800">
         <Link href="/" ><a className="mr-5 hover:text-white">Home</a></Link>     
         <Link href="/about" ><a className="mr-5 hover:text-white">About</a></Link>     
         <Link href="/bookings " ><a className="mr-5 hover:text-white">Bookings</a></Link>     
@@ -114,13 +119,11 @@ export default function Navbar({props}) {
       <a><span className="fi fi-fr mr-2"></span></a>
       </Link>
               
-      <button className="text-white inline-flex items-center bg-navy-900 border-0 py-1 px-4 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"> 
+      <button className="transition ease-in duration-200 text-white inline-flex items-center bg-blue-800 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-800 rounded text-base mt-4 md:mt-0"> 
       <Link href="/bookings">
-          <a>Book Now </a>
+          <a className='inline-flex items-center justify-between text-md'>Book Now &nbsp; <ArrowCircleRightIcon className='h-5 w-5' /> </a>
       </Link>
-      <svg  xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
+
 
       </button>
 

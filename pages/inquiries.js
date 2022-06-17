@@ -1,9 +1,11 @@
-import React from 'react'
+// Nextjs app for inquiries
+import React from 'react';
 
-function Inquiries() {
+
+export default function Inquiries() {
   return (
-    <div>inquiries</div>
-  )
-}
-
-export default Inquiries
+    <div>
+      <h1>Inquiries</h1>
+    </div>
+  );
+} 
