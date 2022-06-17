@@ -26,7 +26,7 @@ export default function Navbar({props}) {
 
       else {
         return (
-          <MoonIcon className="w-7 h-7 text-gray-500 " role="button" onClick={() => setTheme('dark')} />
+          <MoonIcon className="w-7 h-7 text-gray-300 border-2 rounded-full" role="button" onClick={() => setTheme('dark')} />
         )
       }
    };
@@ -99,6 +99,8 @@ export default function Navbar({props}) {
         <Link href="/locale" ><a className="mr-5 hover:text-white">Local</a></Link>     
         <Link href="/inquiries" ><a className="mr-5 hover:text-white">Inquiries</a></Link>     
         <Link href="/flights" ><a className="mr-5 hover:text-white">Flights</a></Link>     
+        <Link href="/users" ><a className="mr-5 hover:text-white">Users</a></Link>     
+        <Link href="/test" ><a className="mr-5 hover:text-white">Test</a></Link>     
 
       </nav>
 
@@ -122,7 +124,7 @@ export default function Navbar({props}) {
 
       </button>
 
-      <div className='ml-3 rounded-full bg-opacity-95 border-2 border-opacity-80  '>
+      <div className='ml-3 rounded-full bg-opacity-95 border-opacity-80  '>
       {renderThemeChanger()}
       </div>
       </div>
