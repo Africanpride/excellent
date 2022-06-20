@@ -102,11 +102,9 @@ export default function Navbar({props}) {
         <Link href="/" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Home</a></Link>     
         <Link href="/about" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">About</a></Link>     
         <Link href="/bookings " ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Bookings</a></Link>     
-        <Link href="/locale" ><a className="mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Local</a></Link>     
+        <Link href="/locale" ><a className="mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Tour Packages</a></Link>     
         <Link href="/inquiries" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Inquiries</a></Link>     
-        <Link href="/flights" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Flights</a></Link>     
-        <Link href="/users" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Users</a></Link>     
-        <Link href="/test" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Test</a></Link>     
+        <Link href="/test" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">News</a></Link>     
 
       </nav>
 

@@ -1,16 +1,11 @@
 import React from 'react'
+import OfferUp from './components/OfferUp';
 
 export default function Test() {
     return (
         <> 
 
-        <div className='block'> 
-        <div>
-            Tesdting 
-        </div>
-
-   
-        </div>
+        <OfferUp />
         </>
     );
 }
