@@ -3,7 +3,7 @@ import React from 'react'
 export const WhyExcel = () => {
   return (
     <>
-    <section className="text-gray-800 body-font bg-blue-50 dark:text-blue-200 dark:bg-slate-900">
+    <section className="pt-20 text-gray-800 body-font  dark:text-blue-200 dark:bg-slate-900 dark:bg-opacity-20">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
       <h2 className="text-xs text-blue-400 tracking-widest font-medium title-font mb-1">Our Mantra: Excellence In Travel</h2>

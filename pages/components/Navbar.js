@@ -16,7 +16,8 @@ import Logo from '../components/logo'
 
 
 export default function Navbar({props}) {
-  
+
+
   const {systemTheme , theme, setTheme} = useTheme ();
 
   const renderThemeChanger= () => {
@@ -56,7 +57,7 @@ export default function Navbar({props}) {
     }
 
     const runBackgroundColorLogic =() => {
-      (scrollY > 100)? setBackground("bg-navy-900") : setBackground("bg-transparent");
+      (scrollY > 100) ? setBackground('bg-navy-200 dark:bg-navy-900 shadow-md') : setBackground('bg-transparent')
       return background;
     }
 
@@ -84,7 +85,7 @@ export default function Navbar({props}) {
       <title>{process.env.NEXT_PUBLIC_ENV_APP_NAME } &#124;	 {capitalizeTitle()}</title>
     </Head>
 
-    <header id='MainNav'  className={`${background} z-30  body-font  top-0 w-full  shadow-sm ${fixed}`}  >
+    <header id='MainNav'  className={`${background} z-30  body-font  top-0 w-full ${fixed}`}  >
     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <div className='inline-flex items-center justify-center'>
     <div  className="pr-2">
@@ -94,18 +95,18 @@ export default function Navbar({props}) {
               </a>
         </Link>
     </div>
-      <div className="ml-3 text-xl pl-4 py-2 border-l border-navy-600 border-opacity-20 text-white">{process.env.NEXT_PUBLIC_ENV_APP_NAME}  <span className='text-base '>&trade;</span>
+      <div className="ml-3 text-xl pl-4 py-2 border-l border-navy-600 border-opacity-40 text-navy-800 dark:text-white">{process.env.NEXT_PUBLIC_ENV_APP_NAME}  <span className='text-base '>&trade;</span>
       </div>
     </div>
-      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-blue-800">
-        <Link href="/" ><a className="mr-5 hover:text-white">Home</a></Link>     
-        <Link href="/about" ><a className="mr-5 hover:text-white">About</a></Link>     
-        <Link href="/bookings " ><a className="mr-5 hover:text-white">Bookings</a></Link>     
-        <Link href="/locale" ><a className="mr-5 hover:text-white">Local</a></Link>     
-        <Link href="/inquiries" ><a className="mr-5 hover:text-white">Inquiries</a></Link>     
-        <Link href="/flights" ><a className="mr-5 hover:text-white">Flights</a></Link>     
-        <Link href="/users" ><a className="mr-5 hover:text-white">Users</a></Link>     
-        <Link href="/test" ><a className="mr-5 hover:text-white">Test</a></Link>     
+      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-navy-900 dark:text-navy-800">
+        <Link href="/" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Home</a></Link>     
+        <Link href="/about" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">About</a></Link>     
+        <Link href="/bookings " ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Bookings</a></Link>     
+        <Link href="/locale" ><a className="mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Local</a></Link>     
+        <Link href="/inquiries" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Inquiries</a></Link>     
+        <Link href="/flights" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Flights</a></Link>     
+        <Link href="/users" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Users</a></Link>     
+        <Link href="/test" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Test</a></Link>     
 
       </nav>
 
@@ -119,7 +120,7 @@ export default function Navbar({props}) {
       <a><span className="fi fi-fr mr-2"></span></a>
       </Link>
               
-      <button className="transition ease-in duration-200 text-white inline-flex items-center bg-blue-800 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-800 rounded text-base mt-4 md:mt-0"> 
+      <button className="transition ease-in duration-200 text-white inline-flex items-center bg-navy-800 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-800 rounded text-base mt-4 md:mt-0"> 
       <Link href="/bookings">
           <a className='inline-flex items-center justify-between text-md'>Book Now &nbsp; <ArrowCircleRightIcon className='h-5 w-5' /> </a>
       </Link>

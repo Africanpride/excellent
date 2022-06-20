@@ -11,7 +11,9 @@ export default function About()
   return (
 
     <>
-        <AboutCTA />
+       <div className=''>
+       <AboutCTA />
+       </div>
 
   </>
   )

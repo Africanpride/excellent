@@ -6,13 +6,14 @@ const nextConfig = {
 const nextTranslate = require('next-translate');
 
 module.exports = {
+
+  images: {
+    domains: ['https://images.unsplash.com','cdn.pixabay.com','dummyimage.com','placehold.it'],
+},
   i18n: {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
   },  
-  images: {
-    domains: ["cdn.pixabay.com","*.dummyimage.com"]
-},
   nextConfig,
   nextTranslate,
   images: {
