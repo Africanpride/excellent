@@ -28,7 +28,7 @@ const Footer = () => {
       <div>
         <p className="font-medium">
           <span className="text-xs tracking-widest uppercase">Call Our Hotline</span>
-          <a className="block text-2xl sm:text-3xl hover:opacity-75" href="">
+          <a className="block  hover:opacity-75 text-navy-200 " href="">
           +1 516 461 9526
           </a>
         </p>

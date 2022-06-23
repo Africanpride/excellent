@@ -9,7 +9,7 @@ function AfricanDestinations() {
   return (
     <>
     <section className="text-gray-600 body-font bg-blue-50 dark:bg-gray-900">
-  <div className="container px-5 py-24 mx-auto">
+  <div className="container px-5 py-36 mx-auto">
     <div className="flex flex-wrap w-full mb-20">
       <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-3 text-gray-900 dark:text-white">Top African Travel Destinations</h1>

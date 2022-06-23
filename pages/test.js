@@ -3,8 +3,7 @@ import OfferUp from './components/OfferUp';
 
 export default function Test() {
     return (
-        <> 
-
+        <>         
         <OfferUp />
         </>
     );
