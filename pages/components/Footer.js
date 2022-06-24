@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 // import airport from '../../assets/images/airport.jpg,
-import airport2 from '../../public/assets/airport2.jpg'
+// import airport2 from '../../public/assets/airport2.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarChart, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faTwitter, faInstagram, faLinkedin, faYoutubeSquare} from "@fortawesome/free-brands-svg-icons"
@@ -15,9 +15,11 @@ const Footer = () => {
 
     <Image
       className="object-fill w-full h-full z-10 "
-      src={airport2}
+      // src={airport2}
+      src="/assets/airport.jpg"
       alt="Proceeding to Boarding Gate"
       layout='fill'
+      objectFit='cover'
     //   width={1120}
     //   height={630}
     />

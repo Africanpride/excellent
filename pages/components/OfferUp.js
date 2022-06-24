@@ -9,6 +9,8 @@ const serviceTextPlaceholder = "Detail is not an obsession, it is the very essen
 const OfferUp = ({serviceAmount = '$499',serviceImage, serviceIntro  = 'Service Name', serviceText }) => {
 return (
 <>
+
+
     <div className="overflow-hidden shadow-lg rounded-2xl w-64 p-4 bg-white relative ">
 
         <div className="w-4/6 relative">

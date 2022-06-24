@@ -8,7 +8,7 @@ import * as flagIcons from 'flag-icons'
 import { useRouter } from 'next/router'
 
 import {useTheme} from "next-themes";
-import{SunIcon ,MoonIcon, ChevronRightIcon, ArrowCircleRightIcon} from "@heroicons/react/solid";
+import{SunIcon ,MoonIcon, ChevronRightIcon, ArrowCircleRightIcon, SwitchHorizontalIcon, LightBulbIcon} from "@heroicons/react/solid";
 import Logo from '../components/logo'
 
 
@@ -26,13 +26,14 @@ export default function Navbar({props}) {
 
       if(currentTheme ==="dark"){
         return (
-          <SunIcon className="w-7 h-7 text-yellow-500 " role="button" onClick={() => setTheme('light')} />
+          <SunIcon className="switch w-7 h-7 text-yellow-500 " role="button" onClick={() => setTheme('light')} />
         )
       }
 
       else {
         return (
-          <MoonIcon className="w-7 h-7 text-gray-300 border-2 rounded-full" role="button" onClick={() => setTheme('dark')} />
+          // <MoonIcon className="w-7 h-7 text-navy-400 border-2 border-blue-300 rounded-full" role="button" onClick={() => setTheme('dark')} />
+          <LightBulbIcon  className="switch w-7 h-7 text-blue-300 rounded-full" role="button" onClick={() => setTheme('dark')} />
         )
       }
    };

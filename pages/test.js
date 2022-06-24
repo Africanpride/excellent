@@ -1,10 +1,11 @@
 import React from 'react'
-import OfferUp from './components/OfferUp';
+import BigCard from './components/BigCard';
+
 
 export default function Test() {
     return (
         <>         
-        <OfferUp />
+            <BigCard />
         </>
     );
 }

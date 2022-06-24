@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html,
+html,
 body {
   padding: 0;
   margin: 0;
@@ -17,4 +17,27 @@ a {
 
 * {
   box-sizing: border-box;
-} */
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: scale(1.33);
+  }
+}
+
+.switch:hover  {
+  border-radius: 50%;
+  /* border: 5px solid #f0f; */
+  /* height: 30px;
+  width: 30px; */
+  animation: pulse 2s infinite;
+}
+
+.circle:hover {
+  transform: scale(1.33);
+  /* animation-play-state: paused; */
+}

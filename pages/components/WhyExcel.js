@@ -1,15 +1,18 @@
 import React from 'react'
+import BigCard from './BigCard'
 
 export const WhyExcel = () => {
   return (
     <>
-    <section className="pt-20 text-gray-800 body-font  dark:text-blue-200 dark:bg-slate-900 dark:bg-opacity-20">
+    <section className="bg-blue-100 pt-20 text-gray-800 body-font  dark:text-blue-200 dark:bg-slate-900 dark:bg-opacity-20">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
       <h2 className="text-xs text-blue-400 tracking-widest font-medium title-font mb-1">Our Mantra: Excellence In Travel</h2>
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-600">About {process.env.NEXT_PUBLIC_ENV_APP_NAME} Adventure Tours</h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Active adventure tours are interest based tours that connect travelers to nature and culture while exploring destinations around the world. Hike, bike, cruise and swim your way through jaw dropping scenery, all while being surrounded by other likeminded travelers. </p>
     </div>
+
+    <BigCard />
     <div className="flex flex-wrap">
       <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6  border-opacity-60">
         <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Shooting Stars</h2>
