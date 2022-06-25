@@ -3,8 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {useEffect,useState } from 'react'
 import * as flagIcons from 'flag-icons'
-
-
 import { useRouter } from 'next/router'
 
 import {useTheme} from "next-themes";
@@ -33,7 +31,7 @@ export default function Navbar({props}) {
       else {
         return (
           // <MoonIcon className="w-7 h-7 text-navy-400 border-2 border-blue-300 rounded-full" role="button" onClick={() => setTheme('dark')} />
-          <LightBulbIcon  className="switch w-7 h-7 text-blue-300 rounded-full" role="button" onClick={() => setTheme('dark')} />
+          <LightBulbIcon  className="switch w-7 h-7 text-white rounded-full" role="button" onClick={() => setTheme('dark')} />
         )
       }
    };
@@ -87,7 +85,7 @@ export default function Navbar({props}) {
     </Head>
 
     <header id='MainNav'  className={`${background} z-30  body-font  top-0 w-full ${fixed}`}  >
-    <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <div className=" mx-auto flex p-5  md:flex-row  justify-between items-center">
     <div className='inline-flex items-center justify-center'>
     <div  className="pr-2">
         <Link href="/">
@@ -96,10 +94,10 @@ export default function Navbar({props}) {
               </a>
         </Link>
     </div>
-      <div className="ml-3 text-xl pl-4 py-2 border-l border-navy-600 border-opacity-40 text-navy-800 dark:text-white">{process.env.NEXT_PUBLIC_ENV_APP_NAME}  <span className='text-base '>&trade;</span>
+      <div className="ml-3  pl-4 py-2 border-l border-navy-300 border-opacity-30 text-white text-bold dark:text-white text-2xl ">{process.env.NEXT_PUBLIC_ENV_APP_NAME}  <span className='text-base '>&trade;</span>
       </div>
     </div>
-      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-navy-900 dark:text-navy-800">
+      <nav className="md:mx-auto hidden md:flex flex-wrap items-center justify-center text-white dark:text-navy-800">
         <Link href="/" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Home</a></Link>     
         <Link href="/about" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">About</a></Link>     
         <Link href="/bookings " ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Bookings</a></Link>     
@@ -111,15 +109,15 @@ export default function Navbar({props}) {
 
     
 
-      <div className='flex justify-center items-center'>
-      <Link href={asPath} locale="en">
-      <a><span className="fi fi-gb mr-2"></span> </a>
-      </Link> 
+      <div className='hidden md:flex justify-center items-center'>
       <Link href={pathname} locale="fr">
-      <a><span className="fi fi-fr mr-2"></span></a>
+      <a><span className="fi fi-fr mr-2  shadow"></span></a>
       </Link>
+      <Link href={asPath} locale="en">
+      <a><span className="fi fi-gb mr-2 shadow"></span> </a>
+      </Link> 
               
-      <button className="transition ease-in duration-200 text-white inline-flex items-center bg-navy-800 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-800 rounded text-base mt-4 md:mt-0"> 
+      <button className="transition ease-in duration-200 text-white inline-flex items-center bg-navy-800 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-800 rounded text-base mt-4 md:mt-0 shadow"> 
       <Link href="/bookings">
           <a className='inline-flex items-center justify-between text-md'>Book Now &nbsp; <ArrowCircleRightIcon className='h-5 w-5' /> </a>
       </Link>
@@ -130,6 +128,9 @@ export default function Navbar({props}) {
       <div className='ml-3 rounded-full bg-opacity-95 border-opacity-80  '>
       {renderThemeChanger()}
       </div>
+      </div>
+      <div className="md:hidden block" >
+      <SwitchHorizontalIcon className="w-7 h-7 text-navy-400 border-2 border-blue-300 rounded-full shadow" role="button" onClick={() => setTheme('dark')} />
       </div>
   </div>
 </header>

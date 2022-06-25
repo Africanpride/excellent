@@ -1,13 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
-// import airport from '../../assets/images/airport.jpg,
-// import airport2 from '../../public/assets/airport2.jpg'
+import Link from 'next/link'
+import {useEffect,useState } from 'react'
+import { useRouter } from 'next/router'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarChart, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faTwitter, faInstagram, faLinkedin, faYoutubeSquare} from "@fortawesome/free-brands-svg-icons"
 
 
 const Footer = () => {
+  const { asPath, pathname } = useRouter();
   return (
     <>
     <footer className="text-white bg-slate-900 lg:grid lg:grid-cols-5">
@@ -16,7 +18,7 @@ const Footer = () => {
     <Image
       className="object-fill w-full h-full z-10 "
       // src={airport2}
-      src="/assets/airport.jpg"
+      src="/static/airport2.jpg"
       alt="Proceeding to Boarding Gate"
       layout='fill'
       objectFit='cover'
@@ -116,6 +118,12 @@ const Footer = () => {
             {" "}
             Returns Policy{" "}
           </a>
+          <Link href={asPath} locale="en">
+          <a><span className="fi fi-gb mr shadow"></span> </a>
+          </Link> 
+          <Link href={pathname} locale="fr">
+          <a><span className="fi fi-fr  shadow"></span></a>
+          </Link>
         </div>
         <p className="mt-4 sm:mt-0">&copy;  { new Date().getFullYear() }. {process.env.NEXT_PUBLIC_ENV_APP_NAME}</p>
       </div>

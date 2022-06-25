@@ -13,7 +13,8 @@ module.exports = {
     'https://images.unsplash.com',
     'cdn.pixabay.com',
     'dummyimage.com',
-    'placehold.it'
+    'placehold.it',
+    'source.unsplash.com'
     ],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

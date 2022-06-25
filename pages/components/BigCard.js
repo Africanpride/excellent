@@ -14,12 +14,10 @@ import biker from '../../public/assets/biker.png'
         date = myDate.toLocaleDateString(),
         itinerary=[]
       }) => {
-      
-
 
       return (
 <>              
-<section className='overflow-hidden w-auto flex flex-col md:flex-row my-16 '>
+<section className='overflow-hidden w-auto flex flex-col md:flex-row  '>
 
   <div className=' bg-cover w-screen md:w-1/2 '>
       <Image 

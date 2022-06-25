@@ -13,9 +13,10 @@ export const WhyExcel = () => {
     </div>
 
     <BigCard />
-    <div className="flex flex-wrap">
+    
+    <div className="flex flex-wrap  pt-5 mt-5">
       <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6  border-opacity-60">
-        <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Shooting Stars</h2>
+        <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">How to book</h2>
         <p className="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
         <a className="text-blue-400 inline-flex items-center">Learn More
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -24,8 +25,8 @@ export const WhyExcel = () => {
         </a>
       </div>
       <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2  border-gray-200 border-opacity-60 dark:border-gray-800">
-        <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">The Catalyzer</h2>
-        <p className="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Trip Planning Assistance</h2>
+        <p className="leading-relaxed text-base mb-4">We are ready to assist you in everyway as you plan the trip of your dream. Get in touch with us through our customer service chanels and social media. </p>
         <a className="text-blue-400 inline-flex items-center">Learn More
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
