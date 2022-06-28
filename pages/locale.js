@@ -5,15 +5,17 @@ import Layout from './components/layout'
 import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Destinations from './components/Destinations';
+import useTranslation from 'next-translate/useTranslation';
+
 
 export default function Home() {
-  const router = useRouter()
-  const { locale } = router
+  const { t } = useTranslation('common');
 
   return (
-<> 
-<Destinations />
-
-</>
+      <> 
+        <h1>{t('title')}</h1>
+        <p>{t('description')}</p>
+        <Destinations />
+      </>
   )
 }

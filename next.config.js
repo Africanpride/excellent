@@ -5,7 +5,8 @@ const nextConfig = {
 
 const nextTranslate = require('next-translate');
 
-module.exports = {
+module.exports = nextTranslate({
+  reactStrictMode: true,
   images: {
     domains: 
     [
@@ -18,12 +19,6 @@ module.exports = {
     ],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  },
-  i18n: {
-    locales: ['en', 'fr'],
-    defaultLocale: 'en',
-  },  
-  nextConfig,
-  nextTranslate,
+  }
 
-}
+})

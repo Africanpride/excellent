@@ -1,9 +1,7 @@
-// Next js product card with tailwind css:
 import React from 'react'
 import Image from 'next/image'
 import biker from '../../public/assets/biker.png'
 
-// arrow function with next js:
 const ProductCard = ({productName, productImage, productPrice, productDescription}) => {
     
     return (

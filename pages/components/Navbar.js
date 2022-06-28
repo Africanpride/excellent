@@ -56,7 +56,7 @@ export default function Navbar({props}) {
     }
 
     const runBackgroundColorLogic =() => {
-      (scrollY > 100) ? setBackground('bg-navy-200 dark:bg-navy-900 shadow-md') : setBackground('bg-transparent')
+      (scrollY > 100) ? setBackground('bg-navy-300 dark:bg-navy-900 shadow-md') : setBackground('bg-transparent')
       return background;
     }
 
@@ -103,7 +103,7 @@ export default function Navbar({props}) {
         <Link href="/bookings " ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Bookings</a></Link>     
         <Link href="/locale" ><a className="mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Tour Packages</a></Link>     
         <Link href="/inquiries" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Inquiries</a></Link>     
-        <Link href="/test" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">News</a></Link>     
+        <Link href="/news" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">News</a></Link>     
 
       </nav>
 

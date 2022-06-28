@@ -41,3 +41,21 @@ a {
   transform: scale(1.33);
   /* animation-play-state: paused; */
 }
+
+.btn-bg{
+
+  background: linear-gradient(150deg,#ff702a 0%,#c507c9 100%) !important;
+  box-shadow: none;
+  border-radius: 4px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff !important;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  border: 0 none;
+  padding: 10px 40px 11px 16px;
+  line-height: 19px;
+  text-align: left;
+  position: relative;
+}
