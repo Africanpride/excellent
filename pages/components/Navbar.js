@@ -6,7 +6,7 @@ import * as flagIcons from 'flag-icons'
 import { useRouter } from 'next/router'
 
 import {useTheme} from "next-themes";
-import{SunIcon ,MoonIcon, ChevronRightIcon, ArrowCircleRightIcon, SwitchHorizontalIcon, LightBulbIcon} from "@heroicons/react/solid";
+import {SunIcon ,MoonIcon, ChevronRightIcon, ArrowCircleRightIcon, SwitchHorizontalIcon, LightBulbIcon, MenuAlt3Icon } from "@heroicons/react/solid";
 import Logo from '../components/logo'
 
 
@@ -101,7 +101,7 @@ export default function Navbar({props}) {
         <Link href="/" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Home</a></Link>     
         <Link href="/about" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">About</a></Link>     
         <Link href="/bookings " ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Bookings</a></Link>     
-        <Link href="/locale" ><a className="mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Tour Packages</a></Link>     
+        <Link href="/tours" ><a className="mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Tour Packages</a></Link>     
         <Link href="/inquiries" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Inquiries</a></Link>     
         <Link href="/news" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">News</a></Link>     
 
@@ -130,7 +130,8 @@ export default function Navbar({props}) {
       </div>
       </div>
       <div className="md:hidden block" >
-      <SwitchHorizontalIcon className="w-7 h-7 text-navy-400 border-2 border-blue-300 rounded-full shadow" role="button" onClick={() => setTheme('dark')} />
+
+      <MenuAlt3Icon className="w-10 h-10 text-navy-400 border-2  shadow" role="button" onClick={(theme) => setTheme('dark')} />
       </div>
   </div>
 </header>

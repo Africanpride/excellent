@@ -9,6 +9,7 @@ import { faFacebookF, faTwitter, faInstagram, faLinkedin, faYoutubeSquare} from 
 
 
 const Footer = () => {
+  const router = useRouter();
   const { asPath, pathname } = useRouter();
   return (
     <>
@@ -32,7 +33,7 @@ const Footer = () => {
       <div>
         <p className="font-medium">
           <span className="text-xs tracking-widest uppercase">Call Our Hotline</span>
-          <a className="block  hover:opacity-75 text-navy-200 " href="">
+          <a className="block  hover:opacity-75 text-navy-200 cursor-pointer " onClick={() => router.push('tel:+15164619526')}>
           +1 516 461 9526
           </a>
         </p>
@@ -128,7 +129,7 @@ const Footer = () => {
         <p className="mt-4 sm:mt-0">&copy;  { new Date().getFullYear() }. {process.env.NEXT_PUBLIC_ENV_APP_NAME}</p>
       </div>
       <p className="mt-8 text-xs text-gray-500 text-justify">
-{`If you are experiencing any issues with our platform, have a suggestion for a new feature, or would like to share your thoughts on anything else related to Excel Travel Services, please click here to get in touch. Your feedback helps us continuously improve our product and create the best possible experience for you. We take protecting your personal information very seriously! For details concerning how we use and protect your personal information, please see here. When you use our services, we may collect information using cookies. Something you eat? Not in this case; cookies are small data files that are stored in a user’s browser when they visit a website. The use of cookies allows us to offer you a more personalized experience on our site - win-win situation, right? For more information on this, please see here.`}
+        {`If you are experiencing any issues with our platform, have a suggestion for a new feature, or would like to share your thoughts on anything else related to Excel Travel Services, please click here to get in touch. Your feedback helps us continuously improve our product and create the best possible experience for you. We take protecting your personal information very seriously! For details concerning how we use and protect your personal information, please see here. When you use our services, we may collect information using cookies. Something you eat? Not in this case; cookies are small data files that are stored in a user’s browser when they visit a website. The use of cookies allows us to offer you a more personalized experience on our site - win-win situation, right? For more information on this, please see here.`}
       </p>
     </div>
   </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import BigCard from './BigCard'
 
-export const WhyExcel = () => {
+ const WhyExcel = () => {
   return (
     <>
     <section className="bg-blue-100 pt-20 text-gray-800 body-font  dark:text-blue-200 dark:bg-slate-900 dark:bg-opacity-20">
@@ -58,3 +58,5 @@ export const WhyExcel = () => {
     </>
   )
 }
+
+export default WhyExcel

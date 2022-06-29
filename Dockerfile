@@ -1,3 +1,12 @@
-FROM nginx:alpine
-COPY ./dist/ /usr/share/nginx/html/
-RUN echo 'Doing the will of the Father'
+FROM node:alpine
+
+#copy source 
+COPY . /app
+
+# Install deps 
+RUN cd /app &&  npm install 
+
+# Build 
+RUN npm run build
+
+ENTRYPOINT [ "npm", "run", "start" ]

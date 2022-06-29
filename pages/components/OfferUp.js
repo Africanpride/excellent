@@ -2,11 +2,10 @@
 // next js arrow function:
 import react from 'react'
 import Image from 'next/image'
-import biker from '../../public/assets/biker.png'
 
-const serviceTextPlaceholder = "Detail is not an obsession, it is the very essence of perfection.";
+const serviceTextPlaceholder = "Details of the service with link to the service page";
 
-const OfferUp = ({serviceAmount = '$499',serviceImage, serviceIntro  = 'Service Name', serviceText }) => {
+const OfferUp = ({serviceAmount = '$299',serviceImage = '/assets/biker.png', serviceIntro  = 'Service Name', serviceText }) => {
 return (
 <>
 
@@ -20,12 +19,12 @@ return (
             {serviceText ?? serviceTextPlaceholder}
             </p>
             <p className="text-indigo-500 text-xl font-medium ">
-            {serviceAmount}
+            Starting at {serviceAmount}
             </p>
         </div>
         <div className="absolute" style={{ right:'-88px', top: '-24px', width: '71%' }} >
             <Image 
-                src={biker}
+                src={serviceImage}
                 layout='intrinsic'
                 width={200}
                 height={200}

@@ -1,10 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Navbar from './components/Navbar'
-import Layout from './components/layout'
-import { AboutCTA } from './components/AboutCTA'
-import Script from 'next/script'
-import styles from '../styles/Home.module.css'
+import React from 'react'
+import AboutCTA from './components/AboutCTA'
 
 export default function About() 
 {
@@ -14,7 +9,6 @@ export default function About()
        <div className=''>
        <AboutCTA />
        </div>
-
   </>
   )
 }
