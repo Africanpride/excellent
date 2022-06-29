@@ -19,6 +19,16 @@ module.exports = nextTranslate({
     ],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  }
+  },
+  reactStrictMode: true,
+  i18n: {
+    locales: ['en', 'fr'],
+    defaultLocale: "en",
+  pages: {
+    "*": ["common"],
+    "/": ["home"],
+    "/about": ["about"]
+  },
+  },
 
 })

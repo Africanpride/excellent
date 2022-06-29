@@ -5,12 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "npm run build && next export -o _static",
-    "lint": "next lint",
-    "build:styles": "postcss tailwind.css -o styles.css",
-    "prebuild": "npm run build:styles",
-    "prestart": "npm run build:styles"
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
