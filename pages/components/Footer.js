@@ -126,7 +126,7 @@ const Footer = () => {
           <a><span className="fi fi-fr  shadow"></span></a>
           </Link>
         </div>
-        <p className="mt-4 sm:mt-0">&copy;  { new Date().getFullYear() }. {process.env.NEXT_PUBLIC_ENV_APP_NAME}</p>
+        <p className="mt-4 sm:mt-0">&copy;  { new Date().getFullYear() }. Excel Travel Services</p>
       </div>
       <p className="mt-8 text-xs text-gray-500 text-justify">
         {`If you are experiencing any issues with our platform, have a suggestion for a new feature, or would like to share your thoughts on anything else related to Excel Travel Services, please click here to get in touch. Your feedback helps us continuously improve our product and create the best possible experience for you. We take protecting your personal information very seriously! For details concerning how we use and protect your personal information, please see here. When you use our services, we may collect information using cookies. Something you eat? Not in this case; cookies are small data files that are stored in a user’s browser when they visit a website. The use of cookies allows us to offer you a more personalized experience on our site - win-win situation, right? For more information on this, please see here.`}

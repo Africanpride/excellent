@@ -81,7 +81,7 @@ export default function Navbar({props}) {
     <>
 
     <Head>
-      <title>{process.env.NEXT_PUBLIC_ENV_APP_NAME } &#124;	 {capitalizeTitle()}</title>
+      <title>Excel Travel Services &#124;	 {capitalizeTitle()}</title>
     </Head>
 
     <header id='MainNav'  className={`${background} z-30  body-font  top-0 w-full ${fixed}`}  >
@@ -94,7 +94,7 @@ export default function Navbar({props}) {
               </a>
         </Link>
     </div>
-      <div className="ml-3  pl-4 py-2 border-l border-navy-300 border-opacity-30 text-white text-bold dark:text-white text-2xl ">{process.env.NEXT_PUBLIC_ENV_APP_NAME}  <span className='text-base '>&trade;</span>
+      <div className="ml-3  pl-4 py-2 border-l border-navy-300 border-opacity-30 text-white text-bold dark:text-white text-2xl ">Excel Travel Services  <span className='text-base '>&trade;</span>
       </div>
     </div>
       <nav className="md:mx-auto hidden md:flex flex-wrap items-center justify-center text-white dark:text-navy-800">
