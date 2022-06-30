@@ -23,7 +23,7 @@ export default function Home()
        Welcome to  <br /> 
        <div 
        className="text-md text-bold text-8xl "> 
-       { process.env.NEXT_PUBLIC_ENV_APP_NAME }
+       Excel Travel Services
        </div> 
     </div>
 
