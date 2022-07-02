@@ -39,13 +39,13 @@ const FooterCarousel = () => {
   autoPlay
   autoPlaySpeed={6000}
   centerMode={false}
-  className="bg-white"
+  className="bg-transparent dark:bg-slate-900"
   containerClass="container-with-dots"
   dotListClass=""
   draggable
   focusOnSelect={false}
   infinite
-  itemClass="px-2 py-3"
+  itemClass="px-1 py-2"
   keyBoardControl
   minimumTouchDrag={80}
   pauseOnHover
@@ -82,19 +82,13 @@ const FooterCarousel = () => {
           
         />
         <img
-          src="https://source.unsplash.com/EOAnV_C1a4w"
-          alt="..."
-          className="rounded"
-          
-        />
-        <img
           src="https://source.unsplash.com/AQJ5cLTR_AM"
           alt="..."
           className="rounded"
           
         />
         <img
-          src="https://source.unsplash.com/lMVvX9cqnX0"
+          src="https://source.unsplash.com/no_TCkPUq_s"
           alt="..."
           className="rounded"
           

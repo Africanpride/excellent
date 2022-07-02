@@ -15,7 +15,7 @@ export default function Tours() {
       <> 
         {/* <h1>{t('title')}</h1>
         <p>{t('description')}</p> */}
-      <div className="w-full bg-gray-100 dark:bg-navy-900">
+      <div className="w-full bg-gray-100 dark:bg-gray-900">
         <div className="py-10 px-5 container mx-auto flex flex-wrap justify-evenly "  >
         <Destinations />
         <Destinations />

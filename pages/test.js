@@ -7,9 +7,9 @@ const test = () => {
   return (
     <>
     <div className=" py-10 bg-gray-100 dark:bg-slate-900 ">
-      <TourCardIntro />
       <TourDestination />
-  
+      <TourCardIntro />
+
     </div>
       
     </>

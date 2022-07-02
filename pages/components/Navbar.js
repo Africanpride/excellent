@@ -104,6 +104,7 @@ export default function Navbar({props}) {
         <Link href="/tours" ><a className="mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Tour Packages</a></Link>     
         <Link href="/inquiries" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Inquiries</a></Link>     
         <Link href="/news" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">News</a></Link>     
+        <Link href="/test" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Test</a></Link>     
 
       </nav>
 

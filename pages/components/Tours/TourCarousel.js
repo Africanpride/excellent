@@ -1,18 +1,26 @@
-/* eslint-disable @next/next/no-img-element */
-import React from 'react'
-import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
-
+import react from 'react';
+// import 'flowbite'
+import { Carousel } from 'flowbite-react'
 
 const TourCarousel = () => {
+
+
   return (
     <>
-<Slider>
-	<img src="https://s18.postimg.cc/9vhgup22x/img1.jpg" />
-	<img src="https://s18.postimg.cc/vunvhvvrt/img2.jpg" />
-	<img src="https://s18.postimg.cc/tdc4amjl5/img3.jpg" />
-</Slider>
-    
+      <div className="h-full w-full ">
+        <Carousel>
+          <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            Slide 1
+          </div>
+          <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            Slide 2
+          </div>
+          <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+            Slide 3
+          </div>
+        </Carousel>
+    </div>
+   
     </>
   )
 }
