@@ -6,14 +6,18 @@ import { useRouter } from 'next/router'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarChart, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faTwitter, faInstagram, faLinkedin, faYoutubeSquare} from "@fortawesome/free-brands-svg-icons"
-
+import FooterCarousel from './FooterCarousel'
 
 const Footer = () => {
   const router = useRouter();
   const { asPath, pathname } = useRouter();
   return (
     <>
-    <footer className="text-white bg-slate-900 lg:grid lg:grid-cols-5">
+
+   { 
+   pathname === '/' ?  null : <FooterCarousel  />}
+
+  <footer className="text-white bg-slate-900 lg:grid lg:grid-cols-5">
   <aside className="hidden  lg:relative lg:col-span-2 lg:block">
 
     <Image

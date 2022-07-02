@@ -1,14 +1,14 @@
 // Nextjs app for inquiries
 import React from 'react';
-import CarouselCard from './components/Carousel';
+import CarouselCard from './components/FooterCarousel';
 import Heading from './components/Heading';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 import { useRouter } from 'next/router'
 import BigCard from './components/BigCard';
 
-
 export default function Inquiries() {
+
   const router = useRouter();
   const { t } = useTranslation('inquiries');
 
@@ -16,7 +16,9 @@ export default function Inquiries() {
 
     <>
     
-    {/* <CarouselCard /> */}
+<div className=''  >
+
+</div>
     <section className="dark:text-gray-400 text-gray-600 dark:bg-navy-900 bg-white body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
