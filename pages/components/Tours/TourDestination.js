@@ -3,6 +3,7 @@ import React from 'react'
 import ItineraryCard from './ItineraryCard'
 import TourCarousel from './TourCarousel'
 import { Card } from 'flowbite-react'
+import PaymentLogos from '../PaymentLogos'
 
 
 const TourDestination = () => {
@@ -10,32 +11,25 @@ const TourDestination = () => {
     <>
 
 
-        <div className='container md:mx-auto'>
-                <div className="px-4 md:px-8 mb-2 max-w-lg mx-auto rounded-lg shadow overflow-hidden lg:max-w-none lg:flex justify-between">
-                    <div className="w-full shadow-lg md:pr-2 md:w-[75%] h-[26rem] md:h-auto ">
+        {/* <div className='container md:mx-auto'>
+                <div className="px-4 md:px-8 mb-2 max-w-lg mx-auto rounded-lg  overflow-hidden lg:max-w-none lg:flex justify-between">
+                    <div className="w-full  md:pr-2 md:w-[75%] h-[26rem] md:h-auto ">
                         <TourCarousel />
                     </div>
 
-                    <div className="w-full md:w-[25%] md:pl-3">
-                    <div className="shadow-lg rounded-xl md:max-w-xs w-full p-6 bg-white dark:bg-gray-800 overflow-hidden">
+                    <div className="w-full md:w-[25%] md:pl-3 ">
+                    <div className=" rounded-xl md:max-w-xs w-full p-6 bg-white dark:bg-gray-800 overflow-hidden">
     <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center justify-start w-full flex-grow">
-            <a href="#" className="block relative">
+            <a href="#" className="inline-block relative pr-2">
                 <img alt="profil" src="/images/person/1.jpg" className="mx-auto object-cover rounded-full h-10 w-10 "/>
             </a>
-            <div className="flex flex-col items-start ml-4">
-                <span className="dark:text-white text-gray-700">
-                    Charlie Rabiller
-                </span>
-                <span className="text-gray-400 font-light text-sm dark:text-gray-300">
-                    Updated 3 min ago
-                </span>
-            </div>
-        </div>
-        <div className="flex-none hidden md:block ">
+
+        <div className="md:block flex-1">
             <span className="w-full px-3 py-1 text-sm rounded-full text-white bg-blue-500">
-                Design
+                English & French
             </span>
+        </div>
         </div>
     </div>
     <p className="text-gray-800 dark:text-white text-lg mt-4 mb-2">
@@ -55,7 +49,7 @@ const TourDestination = () => {
                     /Month
                 </span>
             </p>
-            <span className="px-3 py-1 flex-none text-sm rounded-full text-indigo-500 border border-indigo-500">
+            <span className="px-3 py-1 flex-none text-sm rounded-full text-blue-500 border border-blue-500">
                 Full time
             </span>
         </div>
@@ -67,7 +61,7 @@ const TourDestination = () => {
 
                     </div>
                 </div>
-        </div>
+        </div> */}
 
 
             <div className="container mx-auto py-2 ">
@@ -77,7 +71,7 @@ const TourDestination = () => {
             <div className="bg-white dark:bg-gray-800 px-6 py-8 lg:flex-shrink-1 lg:p-12">
             <div className="flex items-center">
 
-                <h2 className="text-3xl leading-9 font-extrabold text-navy-800 sm:text-3xl sm:leading-9 dark:text-white">
+                <h2 className="uppercase text-2xl leading-9 font-extrabold text-navy-800 sm:text-3xl sm:leading-9 dark:text-white">
                 Togo - Ghana Adventure &amp; Culinary Trip
                 </h2>
                 <br />
@@ -87,16 +81,17 @@ const TourDestination = () => {
                     Overview of the Tour
                 </h4>
 
-            <p className="mt-6 text-base leading-6 text-gray-500 dark:text-gray-200 text-justify ">
+            <p className="my-5 text-base leading-6 text-gray-500 dark:text-gray-200 text-justify ">
             Explore West Africa, the place that is known for rich culture, legacy, warmth and cadence. Find where nature is as yet unadulterated and warmth streams without any problem. Ghana, formally know as the Gold Coast sits between Côte d’ivoire and Togo while sharing a boarder with Burkina Faso to the north. It came in to prominence in its early days for its huge gold reserves. There are many reasons why a tourists will choose Ghana as a place to experience. Ranging from colonial era castles, to beaches, to scenic high routs etc.
             </p>   
-            <div className="flex items-center my-5 p-8 bg-navy-500 text-white text-justify rounded-lg ">
+            <div className="w-full md:w-[100%] h-auto ">
+                        <TourCarousel />
+            </div>
+            {/* <div className="flex items-center my-5 p-8 bg-navy-500 text-white text-justify rounded-lg ">
             Togo & Ghana are both countries found in the West Africa. They host extremely colourful and diverse cultures as well as tourist sites. Togo is a nation in the Gulf of Guinea that lies between Ghana and Benin. Its is know for its serene beaches, busy markets and scenic spots which make it ideal for vacations and tours. You are guaranteed to have a memorable time anytime you visit.
+            </div>      */}
 
-
-
-            </div>     
-            <img src="/images/tours/borabora.jpg" alt="Ghana &amp; Togo" className="w-full h-auto rounded-lg my-10 shadow bg-cover " />
+           
 
             {/* <p className="mt-6 text-base leading-6 text-gray-500 dark:text-gray-200 text-justify ">
 
@@ -173,6 +168,7 @@ const TourDestination = () => {
   </div>
 </div>
 
+<img src="/images/tours/borabora.jpg" alt="Ghana &amp; Togo" className="w-full h-auto rounded-lg my-5 shadow bg-cover " />
             </div>
             <div className="mt-8">
                 <div className="flex items-center">
@@ -276,39 +272,86 @@ const TourDestination = () => {
 
 
             </div>
-            <div className="py-8 px-6 text-center bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-            <p className="text-lg leading-6 font-bold text-gray-900 dark:text-white">
-                Double Occupancy
-            </p>
-            <div className="mt-4 mb-10 flex items-center justify-center text-4xl leading-none font-extrabold text-gray-900 dark:text-white">
-                <span>
-                $2399 Only
-                </span>
-            </div>
-            <hr className='my-5 '/>
+            <div className="py-8 px-6 text-center bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-start lg:p-8">
 
-            <p className="mt-5  text-lg leading-6 font-bold text-gray-900 dark:text-white">
-                Single Occupancy
-            </p>
-            <div className="mt-4 pb-5 flex items-center justify-center text-4xl leading-none font-extrabold text-gray-900 dark:text-white">
-                <span>
-                $2799 Only
+            <div className="shadow-lg rounded-xl w-full max-w-xs p-6 bg-white dark:bg-gray-800 overflow-hidden mb-5  ">
+  <div className="flex flex-col md:flex-row items-center justify-between">
+    <div className="flex items-center justify-start w-full flex-grow">
+      <a href="#" className="block relative">
+        <img alt="profil" src="/images/person/1.jpg" className="mx-auto object-cover rounded-full h-10 w-10 " />
+      </a>
+      <div className="flex flex-col items-start ml-4">
+        {/* <span className="dark:text-white text-gray-700">
+          Charlie Rabiller
+        </span> */}
+        <span className="text-gray-400 font-light text-sm dark:text-gray-300">
+          Updated 3 min ago
+        </span>
+      </div>
+    </div>
+    <div className="flex-none hidden md:block ">
+      <span className="w-full px-3 py-1 text-sm rounded-full text-white bg-blue-500">
+        Tour
+      </span>
+    </div>
+  </div>
+  <p className="text-gray-800 dark:text-white text-lg mt-4 mb-2 text-left ">
+  Unforgettable experience in West Africa.
+  </p>
+  <p className="text-gray-400 font-normal text-sm text-justify ">
+  Togo & Ghana are both countries found in the West Africa. They host extremely colourful and diverse cultures as well as tourist sites. Togo is a nation in the Gulf of Guinea that lies between Ghana and Benin. Its is know for its serene beaches, busy markets and scenic spots which make it ideal for vacations and tours. You are guaranteed to have a memorable time anytime you visit.
+  </p>
+  <div className="flex items-center rounded justify-between p-2 bg-blue-100 my-6">
+    <div className="flex items-start w-full justify-between">
+      <p className="flex-grow w-full text-2xl text-gray-700">
+        <span className="text-gray-400 font-light text-md">
+          $
+        </span>
+        2,399
+        {/* <span className="text-sm font-light text-gray-400">
+          /Month
+        </span> */}
+      </p>
+      <span className="px-3 py-1 flex-none text-sm rounded-full text-blue-500 border border-blue-500">
+        Double Occupancy
+      </span>
+    </div>
+  </div>
+  <div className="flex items-center rounded justify-between p-2 bg-blue-100 my-6">
+    <div className="flex items-start w-full justify-between">
+      <p className="flex-grow w-full text-2xl text-gray-700">
+        <span className="text-gray-400 font-light text-md">
+          $
+        </span>
+        2,799
+      </p>
+      <span className="px-3 py-1 flex-none text-sm rounded-full text-blue-500 border border-blue-500">
+        Single Occupancy
+      </span>
+    </div>
+  </div>
+  <button type="button" className="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+    Book This Tour
+  </button>
+</div>
+
+
+
+            <p className="mt-4 text-sm leading-5 flex flex-col ">
+                <span className=" font-medium text-gray-500 dark:text-gray-400 mb-4 flex justify-center ">
+                <PaymentLogos />
                 </span>
-            </div>
-            <hr className='my-5 '/>
-            <p className="mt-4 text-sm leading-5">
                 <span className="block font-medium text-gray-500 dark:text-gray-400">
-                Card payments:
+                Discount for Children:
                 </span>
                 <span className=" inline-block font-medium text-gray-500 dark:text-gray-400">
-                2.9% + 20p per transaction
+                Children between the ages of 6-12 years <br />
+                50% charge of adult rates.
                 </span>
             </p>
             <div className="mt-6">
                 <div className="rounded-md shadow">
-                <button type="button" className="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                    Book Tour
-                </button>
+
                 </div>
             </div>
             </div>

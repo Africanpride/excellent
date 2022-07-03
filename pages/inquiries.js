@@ -15,6 +15,7 @@ export default function Inquiries() {
   return (
 
     <>
+    <Heading title={'Help & Inquiries'} />
     
 <div className=''  >
 

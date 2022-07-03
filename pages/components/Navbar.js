@@ -56,7 +56,7 @@ export default function Navbar({props}) {
     }
 
     const runBackgroundColorLogic =() => {
-      (scrollY > 100) ? setBackground('bg-navy-300 dark:bg-navy-900 shadow-md') : setBackground('bg-transparent')
+      (scrollY > 100) ? setBackground('bg-navy-400 dark:bg-navy-900 shadow-md') : setBackground('bg-transparent')
       return background;
     }
 
@@ -132,7 +132,7 @@ export default function Navbar({props}) {
       </div>
       <div className="md:hidden block" >
 
-      <MenuAlt3Icon className="w-10 h-10 text-navy-400 border-2  shadow" role="button" onClick={(theme) => setTheme('dark')} />
+      <MenuAlt3Icon className="w-10 h-10 text-white border-2  shadow" role="button" onClick={(theme) => setTheme('dark')} />
       </div>
   </div>
 </header>

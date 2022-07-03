@@ -1,16 +1,22 @@
+import Heading from "./components/Heading";
+
 // Inside "pages/users.js"
 export default function Users( {data} ){
     return (
+
+        <>
+        <Heading />
         <div>
             <h1>List of Users</h1>
             <ul>
                 {data.map((user,index)=>{
-                 return <li key={index}>Id : {user.id} , 
+                    return <li key={index}>Id : {user.id} , 
                      Name : {user.name} , Email : {user.email}
                  </li>   
                 })}
             </ul>
         </div>
+                </>
     )
 }
   

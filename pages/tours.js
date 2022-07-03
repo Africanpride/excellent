@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Destinations from './components/Destinations';
 import useTranslation from 'next-translate/useTranslation';
+import Heading from './components/Heading';
 
 
 export default function Tours() {
@@ -13,6 +14,7 @@ export default function Tours() {
 
   return (
       <> 
+      <Heading title={'Tour Packages'} />
         {/* <h1>{t('title')}</h1>
         <p>{t('description')}</p> */}
       <div className="w-full bg-gray-100 dark:bg-gray-900">

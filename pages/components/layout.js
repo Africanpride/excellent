@@ -9,22 +9,11 @@ import {useRouter} from 'next/router';
 export default function Layout({ children }) {
   const {asPath, pathname} = useRouter();
 
-const GetHeader = () => {
- if ((pathname === '/')) {  
 
-  {''}
-
- } else {
-  return (
-    <Heading />
-  )
- }
-
-}
   return (
     <> 
       <Navbar />
-      <GetHeader />
+      {/* <GetHeader /> */}
       <>{children}</>
       <Footer/>
     </>
