@@ -5,7 +5,7 @@ const TourCardIntro = () => {
 
     <>   
             <div className="container mx-auto py-2 ">
-            <div className="relative  mx-auto px-4 sm:px-6 lg:px-8 ">
+            <div className="relative  mx-auto px-4 sm:px-6 lg:px-4 ">
         <div className="pricing-box max-w-lg mx-auto rounded-lg shadow overflow-hidden lg:max-w-none">
 
             <div className="bg-white dark:bg-gray-800 px-6 py-8 lg:flex-shrink-1 lg:p-12">

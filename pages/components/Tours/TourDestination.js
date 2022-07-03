@@ -65,7 +65,7 @@ const TourDestination = () => {
 
 
             <div className="container mx-auto py-2 ">
-            <div className="relative  mx-auto px-4 sm:px-6 lg:px-8 ">
+            <div className="relative  mx-auto px-4 sm:px-6 lg:px-4 ">
         <div className="pricing-box max-w-lg mx-auto rounded-lg shadow overflow-hidden lg:max-w-none lg:flex">
 
             <div className="bg-white dark:bg-gray-800 px-6 py-8 lg:flex-shrink-1 lg:p-12">
@@ -272,9 +272,9 @@ const TourDestination = () => {
 
 
             </div>
-            <div className="py-8 px-6 text-center bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-start lg:p-8">
+            <div className="py-8 px-6 bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-start lg:p-8">
 
-            <div className="shadow-lg rounded-xl w-full max-w-xs p-6 bg-white dark:bg-gray-800 overflow-hidden mb-5  ">
+            <div className="shadow-lg rounded-xl w-full md:max-w-xs p-6 bg-white dark:bg-gray-800 overflow-hidden mb-5  ">
   <div className="flex flex-col md:flex-row items-center justify-between">
     <div className="flex items-center justify-start w-full flex-grow">
       <a href="#" className="block relative">
@@ -330,18 +330,18 @@ const TourDestination = () => {
       </span>
     </div>
   </div>
-  <button type="button" className="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+  <button type="button" className="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
     Book This Tour
   </button>
 </div>
 
 
 
-            <p className="mt-4 text-sm leading-5 flex flex-col ">
+            <p className="mt-4 text-center text-sm leading-5 flex flex-col ">
                 <span className=" font-medium text-gray-500 dark:text-gray-400 mb-4 flex justify-center ">
                 <PaymentLogos />
                 </span>
-                <span className="block font-medium text-gray-500 dark:text-gray-400">
+                <span className="block  font-medium text-gray-500 dark:text-gray-400">
                 Discount for Children:
                 </span>
                 <span className=" inline-block font-medium text-gray-500 dark:text-gray-400">
@@ -350,7 +350,13 @@ const TourDestination = () => {
                 </span>
             </p>
             <div className="mt-6">
-                <div className="rounded-md shadow">
+                <div className="my-5 text-left">
+              <span className=' uppercase py-5 text-xl text-blue-600'>Itinerary</span>                
+                <div className="flex-1 border-t-2 border-gray-200">
+                </div>
+                  
+
+                  <ItineraryCard />
 
                 </div>
             </div>

@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:alpine
 
 ENV PORT 3000
 
@@ -8,6 +8,9 @@ WORKDIR /usr/src/app
 
 # Installing dependencies
 COPY package*.json /usr/src/app/
+RUN npm install -g npm@8.13.2
+RUN npm cache clear --force && npm config set fetch-retry-maxtimeout 120000 && npm config set fetch-retry-maxtimeout 120000
+
 RUN npm install
 
 # Copying source files
