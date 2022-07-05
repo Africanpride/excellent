@@ -17,7 +17,7 @@ export default function Heading({ title, subtitle, imageSrc = '/static/beach.jpg
 
             <div className="container flex flex-wrap px-16 py-[32px] mx-auto items-center z-10 text-white" >
                 <div className="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200 ">
-                    <h1 className="text-6xl text-center md:text-right md:text-5xl  uppercase font-extrabold  title-font mb-2  font-sans bg-clip-text text-white">{ title ?? pathname}</h1>
+                    <h1 className="text-4xl text-center md:text-right md:text-4xl  uppercase font-extrabold  title-font mb-2  font-sans bg-clip-text text-white">{ title ?? pathname}</h1>
                     {/* <h1 className="text-6xl text-center md:text-right md:text-7xl  uppercase font-extrabold  title-font mb-2  font-sans bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-blue-500 to-yellow-500 ">{ title ?? pathname}</h1> */}
 
                 </div>

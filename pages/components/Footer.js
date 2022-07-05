@@ -14,8 +14,7 @@ const Footer = () => {
   return (
     <>
 
-   { 
-   pathname === '/' ?  null : <FooterCarousel  />}
+   { pathname === '/' ?  null : <FooterCarousel  />}
 
   <footer className="text-white bg-slate-900 lg:grid lg:grid-cols-5">
   <aside className="hidden  lg:relative lg:col-span-2 lg:block">

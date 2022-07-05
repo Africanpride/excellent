@@ -55,8 +55,6 @@ const TourCardIntro = () => {
     </summary>
     <p className="mt-4 leading-relaxed text-gray-900 dark:text-white">
     Depending on when you would like to go, the group size on this tour can include up to a maximum of 51 people.
-
-
     </p>
   </details>
 </div>

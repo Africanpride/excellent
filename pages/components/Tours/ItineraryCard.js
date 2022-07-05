@@ -65,6 +65,21 @@ const ItineraryCard = () => {
           <p className="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
         </div>
       </div>
+      <div className="flex relative pb-12 text-left">
+        <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+          <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+        </div>
+        <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 inline-flex items-center justify-center text-white relative z-10">
+          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+            <circle cx={12} cy={7} r={4} />
+          </svg>
+        </div>
+        <div className="flex-grow pl-4 ">
+          <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">DAY 5</h2>
+          <p className="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+        </div>
+      </div>
       <div className="flex relative ">
         <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 inline-flex items-center justify-center text-white relative z-10">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
@@ -73,7 +88,7 @@ const ItineraryCard = () => {
           </svg>
         </div>
         <div className="flex-grow pl-4 text-left">
-          <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">DAY 5</h2>
+          <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">DAY 6</h2>
           <p className="leading-relaxed">Pitchfork ugh tattooed scenester echo park gastropub whatever cold-pressed retro.</p>
         </div>
       </div>

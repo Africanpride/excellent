@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from './components/Navbar'
-import Layout from './components/layout'
+import Navbar from '../components/Navbar'
+import Layout from '../components/layout'
 import { useRouter } from 'next/router';
 import Link from 'next/link'
-import Destinations from './components/Destinations';
+import Destinations from '../components/Destinations';
 import useTranslation from 'next-translate/useTranslation';
-import Heading from './components/Heading';
+import Heading from '../components/Heading';
 
 
 export default function Tours() {
