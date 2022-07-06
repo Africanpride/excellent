@@ -17,7 +17,7 @@ const ItineraryCard = () => {
           </svg>
         </div>
         <div className="flex-grow pl-4">
-          <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">DAY 1</h2>
+          <h2 className="font-medium title-font text-sm dark:text-white text-gray-900 mb-1 tracking-wider">DAY 1</h2>
           <p className="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
         </div>
       </div>
@@ -31,7 +31,7 @@ const ItineraryCard = () => {
           </svg>
         </div>
         <div className="flex-grow pl-4">
-          <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">DAY 2</h2>
+          <h2 className="font-medium title-font text-sm dark:text-white text-gray-900 mb-1 tracking-wider">DAY 2</h2>
           <p className="leading-relaxed">Vice migas literally kitsch +1 pok pok. Truffaut hot chicken slow-carb health goth, vape typewriter.</p>
         </div>
       </div>
@@ -46,7 +46,7 @@ const ItineraryCard = () => {
           </svg>
         </div>
         <div className="flex-grow pl-4">
-          <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">DAY 3</h2>
+          <h2 className="font-medium title-font text-sm dark:text-white text-gray-900 mb-1 tracking-wider">DAY 3</h2>
           <p className="leading-relaxed">Coloring book nar whal glossier master cleanse umami. Salvia +1 master cleanse blog taiyaki.</p>
         </div>
       </div>
@@ -61,7 +61,7 @@ const ItineraryCard = () => {
           </svg>
         </div>
         <div className="flex-grow pl-4 ">
-          <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">DAY 4</h2>
+          <h2 className="font-medium title-font text-sm dark:text-white text-gray-900 mb-1 tracking-wider">DAY 4</h2>
           <p className="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
         </div>
       </div>
@@ -76,7 +76,7 @@ const ItineraryCard = () => {
           </svg>
         </div>
         <div className="flex-grow pl-4 ">
-          <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">DAY 5</h2>
+          <h2 className="font-medium title-font text-sm dark:text-white text-gray-900 mb-1 tracking-wider">DAY 5</h2>
           <p className="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
         </div>
       </div>
@@ -88,7 +88,7 @@ const ItineraryCard = () => {
           </svg>
         </div>
         <div className="flex-grow pl-4 text-left">
-          <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">DAY 6</h2>
+          <h2 className="font-medium title-font text-sm dark:text-white text-gray-900 mb-1 tracking-wider">DAY 6</h2>
           <p className="leading-relaxed">Pitchfork ugh tattooed scenester echo park gastropub whatever cold-pressed retro.</p>
         </div>
       </div>

@@ -81,7 +81,7 @@ const TourDestination = () => {
                     Overview of the Tour
                 </h4>
 
-            <p className="my-5 text-base leading-6 text-gray-500 dark:text-gray-200 text-justify ">
+            <p className="my-5 text-base leading-6 text-gray-800 dark:text-gray-200 text-justify ">
             Explore West Africa, the place that is known for rich culture, legacy, warmth and cadence. Find where nature is as yet unadulterated and warmth streams without any problem. Ghana, formally know as the Gold Coast sits between Côte d’ivoire and Togo while sharing a boarder with Burkina Faso to the north. It came in to prominence in its early days for its huge gold reserves. There are many reasons why a tourists will choose Ghana as a place to experience. Ranging from colonial era castles, to beaches, to scenic high routs etc.
             </p>   
             <div className="w-full md:w-[100%] h-auto ">
@@ -168,7 +168,7 @@ const TourDestination = () => {
   </div>
 </div>
 
-<img src="/images/tours/borabora.jpg" alt="Ghana &amp; Togo" className="w-full h-auto rounded-lg my-5 shadow bg-cover " />
+<img src="/images/tours/elephant.jpg" alt="Ghana &amp; Togo" className="w-full h-auto rounded-lg my-5 shadow bg-cover " />
             </div>
             <div className="mt-8">
                 <div className="flex items-center">
@@ -298,7 +298,7 @@ const TourDestination = () => {
   <p className="text-gray-800 dark:text-white text-lg mt-4 mb-2 text-left ">
   Unforgettable experience in West Africa.
   </p>
-  <p className="text-gray-400 font-normal text-sm text-justify ">
+  <p className="text-gray-500 font-normal text-sm text-justify ">
   Togo & Ghana are both countries found in the West Africa. They host extremely colourful and diverse cultures as well as tourist sites. Togo is a nation in the Gulf of Guinea that lies between Ghana and Benin. Its is know for its serene beaches, busy markets and scenic spots which make it ideal for vacations and tours. You are guaranteed to have a memorable time anytime you visit.
   </p>
   <div className="flex items-center rounded justify-between p-2 bg-blue-100 my-6">

@@ -94,9 +94,14 @@ export default function Navbar({props}) {
               </a>
         </Link>
     </div>
+    <Link href="/">
+      <a>        
       <div className="ml-3  pl-4 py-2 border-l border-navy-300 border-opacity-30 text-white text-bold dark:text-white text-2xl ">Excel Travel Services  <span className='text-base '>&trade;</span>
       </div>
+      </a>
+    </Link>
     </div>
+
       <nav className="md:mx-auto hidden md:flex flex-wrap items-center justify-center text-white dark:text-navy-800">
         <Link href="/" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Home</a></Link>     
         <Link href="/about" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">About</a></Link>     
@@ -104,11 +109,7 @@ export default function Navbar({props}) {
         <Link href="/tours/" ><a className="mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Tour Packages</a></Link>     
         <Link href="/inquiries" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Inquiries</a></Link>     
         <Link href="/news" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">News</a></Link>     
-        <Link href="/test" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Test</a></Link>     
-
       </nav>
-
-    
 
       <div className='hidden md:flex justify-center items-center'>
       <Link href={pathname} locale="fr">

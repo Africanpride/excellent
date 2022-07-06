@@ -14,13 +14,13 @@ export default function Tours() {
 
   return (
       <> 
-      <Heading title={'Tour Packages'} />
+      <Heading title={'Our Tour Packages'} imageSrc={'/images/cards/egypt3.jpg'}  />
         {/* <h1>{t('title')}</h1>
         <p>{t('description')}</p> */}
-      <div className="w-full bg-gray-100 dark:bg-gray-900">
+      <div className="w-full bg-gray-200 dark:bg-gray-900">
         <div className="py-10 px-5 container mx-auto flex flex-wrap justify-evenly "  >
         <Destinations />
-        <Destinations />
+        
         </div>
     </div>
 

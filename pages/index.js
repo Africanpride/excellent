@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Layout from './components/layout'
 import AfricanDestinations from './components/AfricanDestinations'
 import OfferUp from './components/OfferUp'
+import HomePageTourIntro from './components/HomePageTourIntro'
 
 
 export default function Home() 
@@ -19,10 +20,10 @@ export default function Home()
     >
       <div className="absolute inset-0 bg-navy-900 opacity-60"></div>
 
-     <div className='z-10  text-4xl  text-left capitalize  text-pink-600 font-sans bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 font-bold  md:text-2xl  lg:text-5xl '>
+     <div className='z-10  text-2xl md:text-4xl  text-left capitalize  text-pink-600 font-sans bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 font-bold  lg:text-5xl '>
        Welcome to  <br /> 
        <div 
-       className="text-md text-bold text-8xl "> 
+       className="text-md text-bold text-5xl md:text-8xl "> 
        Excel Travel Services
        </div> 
     </div>
@@ -34,7 +35,7 @@ export default function Home()
       <span className=''><OfferUp serviceIntro='Tours' serviceAmount={'$799'} /></span>      
     </div>
    </main>
-
+    <HomePageTourIntro />
    <AfricanDestinations />
     </>
   )
