@@ -7,6 +7,8 @@ import ItineraryCard from '../components/Tours/ItineraryCard'
 import TourCardIntro from '../components/Tours/TourCardIntro'
 import TourCarousel from '../components/Tours/TourCarousel'
 import TourDestination from '../components/Tours/TourDestination'
+// pass html element to virtual dom
+import parse from 'html-react-parser';
 
 const destinationAfrica1 = {
   tourName: 'Togo - Ghana Adventure & Culinary Trip ',
@@ -16,6 +18,8 @@ const destinationAfrica1 = {
 
   tourDuration: `7 days 6 nights`,
 
+  tourOverview2Header: `Two Nations One Tour `,
+
   tourImage: `/images/tours/elephant.jpg`,
 
   tourHighlight: [
@@ -23,9 +27,13 @@ const destinationAfrica1 = {
   ], 
   tourPayment: 'Payment is required upon arrival',
   tourPaymentLogos: <PaymentLogos />,
-  tourPackageWithPrice1: <TourPackageWithPrice packageName={'Single Occupancy'} packagePrice={'2,799'} />,
-  tourPackageWithPrice2: <TourPackageWithPrice packageName={'Double Occupancy'} packagePrice={'2,399'} />,
-  tourPackageWithPrice3: <TourPackageWithPrice  />,
+  tourPackageWithPrice1: parse('<div className="flex items-center rounded justify-between p-2 bg-blue-100 my-6 "><div className="flex items-start w-full justify-between"><p className="flex-grow w-full text-2xl text-gray-700"><span className="text-gray-400 font-light text-md">$</span>2,799</p><span className="px-3 py-1 flex-none text-sm rounded-full text-blue-500 border border-blue-500">Single Occupancy</div></div>'),
+
+  tourPackageWithPrice2: parse('<div className="flex items-center rounded justify-between p-2 bg-blue-100 my-6 "><div className="flex items-start w-full justify-between"><p className="flex-grow w-full text-2xl text-gray-700"><span className="text-gray-400 font-light text-md">$</span>2,399</p><span className="px-3 py-1 flex-none text-sm rounded-full text-blue-500 border border-blue-500">Double Occupancy</div></div>'),
+
+  tourPackageWithPrice3: '',
+
+
   
   tourItinerary: [
     {

@@ -8,7 +8,11 @@ import ItineraryCard from '../components/Tours/ItineraryCard';
 import TourCarousel from '../components/Tours/TourCarousel';
 import TourPackageWithPrice from '../components/TourPackageWithPrice';
 import PaymentLogos from '../components/PaymentLogos';
+// pass html element to virtual dom
+import parse from 'html-react-parser';
+import AdditionalOffer from '../components/AdditionalOffer'
 
+const egyptPackageItem = parse('');
 
 const destinationEgype1 = {
   tourName: 'Egypt: 7 Days, 6 nights Luxury Trip',
@@ -16,19 +20,47 @@ const destinationEgype1 = {
 
   tourOverview2: `The pyramids in egypt took 20 years to build and it was covered with polished limestone blocks that were cut into shape using copper chisels during construction. The Egyptians believed that after death they would go through several stages before reaching heaven or hell depending on how good their life had been while they were alive!`,
 
+  tourOverview2Header: `Great Pyramid of Giza`,
+
   tourDuration: `7 days 6 nights`,
 
-  tourImage: `/images/tours/elephant.jpg`,
+  tourImage: `/images/cards/egypt3.jpg`,
 
   tourHighlight: [
     'Akwapim hills', 'Lome Beach', 'Aneho Beach', 'Togo Museum','Kpalime City Tour','Keta Beaches and St. Paul Lighthouse','W.E. B. Du Bois Centre', 'Kwame Nkrumah Mausoleum', 'Agou and Yikpa Waterfalls', 'Agou and Yikpa Waterfalls', 'Agbodrafo Slave house and Aného'
   ], 
   tourPayment: 'Payment is required upon arrival',
   tourPaymentLogos: <PaymentLogos />,
-  tourPackageWithPrice1: <TourPackageWithPrice packageName={'Single Occupancy'} packagePrice={'2,799'} />,
-  tourPackageWithPrice2: <TourPackageWithPrice packageName={'Double Occupancy'} packagePrice={'2,399'} />,
-  tourPackageWithPrice3: <TourPackageWithPrice  />,
-  
+
+  tourPackageWithPrice1: '',
+
+  tourPackageWithPrice2: '',
+
+  tourPackageWithPrice3: '',
+
+  additionalOffers1: 
+  <AdditionalOffer 
+  offerTitle={'1- Super Deluxe Hotel & Nile Cruise'} 
+  image={'/images/cards/hotels/holiday3.avif'} 
+  offerText={'Price per person in a single room in super deluxe Hotel and Nile cruise device is 4700$ the price per person in a double room in super deluxe hotel and Nile cruise service is 4350$'}
+  offerPrice='$4700 - $4350'
+  />,
+  additionalOffers2: 
+  <AdditionalOffer 
+  offerTitle={'2- Super Deluxe Hotel & Nile Cruise'} 
+  image={'/images/cards/hotels/holiday.avif'} 
+  offerText={'Price per person in deluxe hotel and Nile cruise service in single room 4200$ Price per person in double room deluxe hotel and Nile cruise service 3900$'}
+    offerPrice='$4200 - $3900'
+  />,
+  additionalOffers3: 
+  <AdditionalOffer 
+  offerTitle={'3- Super Deluxe Hotel & Nile Cruise'} 
+  image={'/images/cards/hotels/holiday2.avif'} 
+  offerText={'Price per person in single room standard service 3300$ Per person in double room standard service 3100$'}
+    offerPrice='$3300 - $3100'
+  />,
+
+
   tourItinerary: [
     {
       day: 1,
@@ -77,11 +109,10 @@ const EgyptTripOne = () => {
   const subtitleText = clip(`Egyptian art is also a mixture of styles from other cultures—the Egyptians borrowed techniques from the Etruscans and Greeks, for instance; they used materials like wood or stone; they made art for various purposes such as religious rituals or tomb decoration.`, 150);
   return (
     <>
-    <Heading title={`Egypt: 7 Days, 6 nights Luxury Trip`} imageSrc={'/images/tours/elephant2.jpg '} subtitle = {subtitleText}  />
+    <Heading title={`Egypt: 7 Days, 6 nights Luxury Trip`} imageSrc={'/images/cards/egypt6.jpg '} subtitle = {subtitleText}  />
     <div className=" py-10 bg-gray-100 dark:bg-slate-900 ">
       <TourDestination 
       {...destinationEgype1} 
-
       />
       <TourCardIntro />
     </div>      

@@ -100,6 +100,13 @@ const TourDestination = (props) => {
   </div>
 </div>
 
+{props.additionalOffers1 }
+{props.additionalOffers2 }
+{props.additionalOffers3 }
+{props.additionalOffers4 }
+{props.additionalOffers5 }
+
+
 <img src={props.tourImage} alt={props.tourImageAlt} className="w-full h-auto rounded-lg my-5 shadow bg-cover " />
             </div>
             <div className="mt-8">
@@ -228,15 +235,19 @@ const TourDestination = (props) => {
     </div>
   </div>
   <p className="text-gray-800 dark:text-white text-lg mt-4 mb-2 text-left ">
-  Unforgettable experience in West Africa.
+  {props.tourOverview2Header}
   </p>
   <p className="text-gray-500 font-normal text-sm text-justify ">
 {props.tourOverview2}
   </p>
-{props.tourPackageWithPrice1}
-{props.tourPackageWithPrice2}
+{props.tourPackageWithPrice1 }
+{props.tourPackageWithPrice2 }
+{props.tourPackageWithPrice3 }
+{props.tourPackageWithPrice4 }
+{props.tourPackageWithPrice5 }
+{props.tourPackageWithPrice6 }
 
-  <button type="button" className="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+  <button type="button" className="my-5 py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
     Book This Tour
   </button>
 </div>
