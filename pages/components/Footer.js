@@ -20,9 +20,9 @@ const Footer = () => {
   <aside className="hidden  lg:relative lg:col-span-2 lg:block">
 
     <Image
-      className="object-fill w-full h-full z-10 "
+      className="object-fill w-full h-full z-10 grayscale "
       // src={airport2}
-      src="/static/airport2.jpg"
+      src="/images/cards/airportLobby2.jpg"
       alt="Proceeding to Boarding Gate"
       layout='fill'
       objectFit='cover'

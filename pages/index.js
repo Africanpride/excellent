@@ -15,7 +15,7 @@ export default function Home()
     className='flex flex-col justify-center items-center object-fit h-screen w-full bg-blue-200  dark:bg-black md:mx-auto  px-4'     
     style={{
       backgroundImage:
-        "url(https://source.unsplash.com/UYiesSO4FiM       )", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"
+        "url(https://source.unsplash.com/UYiesSO4FiM)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"
     }}
     >
       <div className="absolute inset-0 bg-navy-900 opacity-60"></div>

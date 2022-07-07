@@ -5,9 +5,10 @@ import clip from "text-clipper"
 
 function Destinations() {
   const tourOverviewTogo = clip('Explore West Africa, the place that is known for rich culture, legacy, warmth and cadence. Find where nature is as yet unadulterated and warmth streams without any problem. Ghana, formally know as the Gold Coast sits between Côte d’ivoire and Togo while sharing a boarder with Burkina Faso to the north. It came in to prominence in its early days for its huge gold reserves. There are many reasons why a tourists will choose Ghana as a place to experience. Ranging from colonial era castles, to beaches, to scenic high routs etc.', 120);
+
   const tourOverviewEgyptOne = clip('We are very excited to introduce 7 days / 6 nights with luxury service to the land of Pharoah. The land of great histories and pyramids and that welcome great men like Abraham, Moses, Jacob and Joseph, among others. Life is to be enjoyed and that is why we at Excel Travel Services have organised this trip for you.', 120);
 
-  const tourOverviewEgyptTwo = clip('We are very excited to introduce 7 days / 6 nights with luxury service to the land of Pharoah. The land of great histories and pyramids and that welcome great men like Abraham, Moses, Jacob and Joseph, among others. Life is to be enjoyed and that is why we at Excel Travel Services have organised this trip for you.', 120);
+  const tourOverviewEgyptTwo = clip('We are very excited to introduce 5 days / 4 nights with luxury service to the land of Pharoah. The land of great histories and pyramids and that welcome great men like Abraham, Moses, Jacob and Joseph, among others. Life is to be enjoyed and that is why we at Excel Travel Services have organised this trip for you.', 120);
   return (
     <>
 
@@ -49,7 +50,7 @@ function Destinations() {
               </div>
             </a>
             </Link>
-          <Link href="/tours/togo-ghana-adventure-and-culinary-trip">
+          <Link href="/tours/egypt-7-days-6-nights-luxury-trip">
             <a className="p-4 lg:w-1/3">
 
             <div className="h-full shadow  bg-gray-200  dark:bg-gray-800 dark:bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
@@ -59,7 +60,7 @@ function Destinations() {
                 <h2 className="relative z-10 tracking-widest text-xs title-font font-medium text-yellow-300 mb-1">AFRICA TOURS</h2>
                 <h1 className="relative z-10 title-font sm:text-2xl text-xl font-medium text-white dark:text-white  mb-3">Egypt: 7 Days, 6 Nights  <br /> Luxury Trip</h1>
                 <p className="relative z-10 leading-relaxed mb-3 dark:text-white text-cyan-400 "> {tourOverviewEgyptOne} </p>
-                <Link href="/tours/togo-ghana-adventure-and-culinary-trip">
+                <Link href="/tours/egypt-7-days-6-nights-luxury-trip">
                   <a className="text-yellow-300 inline-flex items-center relative z-10 ">Learn More
                   <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14" />
@@ -83,7 +84,7 @@ function Destinations() {
               </div>
             </a>
             </Link>
-          <Link href="/tours/togo-ghana-adventure-and-culinary-trip">
+          <Link href="/tours/egypt-5-days-4-nights-luxury-trip">
             <a className="p-4 lg:w-1/3">
 
             <div className="h-full shadow  bg-gray-200  dark:bg-gray-800 dark:bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
@@ -93,7 +94,7 @@ function Destinations() {
                 <h2 className="relative z-10 tracking-widest text-xs title-font font-medium text-yellow-300 mb-1">AFRICA TOURS</h2>
                 <h1 className="relative z-10 title-font sm:text-2xl text-xl font-medium text-white dark:text-white  mb-3">Egypt: 5 Days, 4 Nights  <br /> Luxury Trip</h1>
                 <p className="relative z-10 leading-relaxed mb-3 dark:text-cyan-100 text-cyan-300 "> {tourOverviewEgyptTwo} </p>
-                <Link href="/tours/togo-ghana-adventure-and-culinary-trip">
+                <Link href="/tours/egypt-5-days-4-nights-luxury-trip">
                   <a className="text-yellow-300 inline-flex items-center relative z-10 ">Learn More
                   <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14" />
@@ -117,11 +118,6 @@ function Destinations() {
               </div>
             </a>
             </Link>
-
-
-
-
-
           </div>
         </div>
       </section>

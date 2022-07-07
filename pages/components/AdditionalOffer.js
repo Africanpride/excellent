@@ -4,12 +4,13 @@ import React from 'react'
 const AdditionalOffer = (props) => {
   return (
 <>
- <div className={'flex max-w-3xl h-auto md:max-h-52 my-5 bg-white dark:bg-slate-700 shadow-lg rounded-lg overflow-hidden' + props.hidden}>
- <div className="w-1/3 bg-cover bg-landscape">
+ <div className={'flex flex-wrap  md:max-w-3xl h-auto md:max-h-auto  my-5 bg-white dark:bg-slate-700 shadow-lg rounded-lg overflow-hidden' + props.hidden}>
+ <div className=" md:w-1/3 bg-cover bg-landscape overflow-hidden">
     {/*tailwind full bg image */}
-    <img className="w-full h-full object-cover rounded-l-lg  " src={props.image} alt="Tour Package" />
+    <img className="w-full h-full object-cover rounded-t-lg md:rounded-r-none md:rounded-l-lg  overflow-hidden " src={props.image} alt="Tour Package" />
   </div>
-  <div className="w-2/3 p-4">
+
+  <div className="w-full  md:w-2/3 p-4 flex flex-col justify-center ">
     <h1 className="text-gray-900 dark:text-gray-100  font-bold text-2xl">
       {props.offerTitle}
     </h1>
@@ -36,7 +37,7 @@ const AdditionalOffer = (props) => {
         {props.offerPrice ?? ''}
       </h1>
       <button className="px-3 py-2 dark:bg-navy-800   dark:hover:bg-navy-700 bg-navy-800 hover:bg-navy-900 text-white dark:text-navy-50 text-xs font-bold uppercase rounded">
-        Add to Card
+        Book in Addition
       </button>
     </div>
   </div>
