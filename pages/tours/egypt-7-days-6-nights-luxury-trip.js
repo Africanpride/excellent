@@ -1,18 +1,20 @@
 import React from 'react'
 import Heading from '../components/Heading'
-import PaymentLogos from '../components/PaymentLogos'
 import SmallCard from '../components/SmallCard'
-import TourPackageWithPrice from '../components/TourPackageWithPrice'
-import ItineraryCard from '../components/Tours/ItineraryCard'
 import TourCardIntro from '../components/Tours/TourCardIntro'
-import TourCarousel from '../components/Tours/TourCarousel'
 import TourDestination from '../components/Tours/TourDestination'
+import clip from 'text-clipper'
+import ItineraryCard from '../components/Tours/ItineraryCard';
+import TourCarousel from '../components/Tours/TourCarousel';
+import TourPackageWithPrice from '../components/TourPackageWithPrice';
+import PaymentLogos from '../components/PaymentLogos';
 
-const destinationAfrica1 = {
-  tourName: 'Togo - Ghana Adventure & Culinary Trip ',
-  tourOverview: `Explore West Africa, the place that is known for rich culture, legacy, warmth and cadence. Find where nature is as yet unadulterated and warmth streams without any problem. Ghana, formally known as the Gold Coast sits between Côte d’ivoire and Togo while sharing a boarder with Burkina Faso to the north. It came in to prominence in its early days for its huge gold reserves. There are many reasons why a tourists will choose Ghana as a place to experience. Ranging from colonial era castles, to beaches, to scenic high routs etc.`,
 
-  tourOverview2: `Togo & Ghana are both countries found in the West Africa. They host extremely colourful and diverse cultures as well as tourist sites. Togo is a nation in the Gulf of Guinea that lies between Ghana and Benin. Its is know for its serene beaches, busy markets and scenic spots which make it ideal for vacations and tours. You are guaranteed to have a memorable time anytime you visit.`,
+const destinationEgype1 = {
+  tourName: 'Egypt: 7 Days, 6 nights Luxury Trip',
+  tourOverview: `Egypt is a world-class diving destination. It offers an enormous variety of dive sites and dive operators, ranging from Red Sea shore sites to deep-diving liveaboard boats. There are many different types of diving available: wreck diving, wall diving, drift dives and night or cave diving. The Red Sea has many high quality dive centers offering PADI certification courses at affordable prices. One of the best things to do in Egypt is visit pyramids. Pyramids are very interesting, because they have been built by many people’s hands a long time ago. There are many pyramids in Egypt, such as the Great Pyramid of Giza and others (there is no place on earth that has so many pyramids)`,
+
+  tourOverview2: `The pyramids in egypt took 20 years to build and it was covered with polished limestone blocks that were cut into shape using copper chisels during construction. The Egyptians believed that after death they would go through several stages before reaching heaven or hell depending on how good their life had been while they were alive!`,
 
   tourDuration: `7 days 6 nights`,
 
@@ -70,18 +72,21 @@ const destinationAfrica1 = {
 
 }
 
-const TogoGhana = () => {
-  const subtitleText = `Togo is known for their great beaches, among them being Aneho Beach and Lome Beach. 
-  White sand can be found on several of the beaches, and seclusion is simple to come by.`;
+
+const EgyptTripOne = () => {
+  const subtitleText = clip(`Egyptian art is also a mixture of styles from other cultures—the Egyptians borrowed techniques from the Etruscans and Greeks, for instance; they used materials like wood or stone; they made art for various purposes such as religious rituals or tomb decoration.`, 150);
   return (
     <>
-    <Heading title={`Togo-Ghana Adventures & Culinary Trip`} imageSrc={'/images/tours/elephant2.jpg '} subtitle = {subtitleText}  />
+    <Heading title={`Egypt: 7 Days, 6 nights Luxury Trip`} imageSrc={'/images/tours/elephant2.jpg '} subtitle = {subtitleText}  />
     <div className=" py-10 bg-gray-100 dark:bg-slate-900 ">
-      <TourDestination {...destinationAfrica1} />
+      <TourDestination 
+      {...destinationEgype1} 
+
+      />
       <TourCardIntro />
     </div>      
     </>
   )
 }
 
-export default TogoGhana
+export default EgyptTripOne

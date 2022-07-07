@@ -4,75 +4,21 @@ import ItineraryCard from './ItineraryCard'
 import TourCarousel from './TourCarousel'
 import { Card } from 'flowbite-react'
 import PaymentLogos from '../PaymentLogos'
+import TourPackageWithPrice from '../TourPackageWithPrice'
 
-
-const TourDestination = () => {
+const TourDestination = (props) => {
   return (
     <>
 
-
-        {/* <div className='container md:mx-auto'>
-                <div className="px-4 md:px-8 mb-2 max-w-lg mx-auto rounded-lg  overflow-hidden lg:max-w-none lg:flex justify-between">
-                    <div className="w-full  md:pr-2 md:w-[75%] h-[26rem] md:h-auto ">
-                        <TourCarousel />
-                    </div>
-
-                    <div className="w-full md:w-[25%] md:pl-3 ">
-                    <div className=" rounded-xl md:max-w-xs w-full p-6 bg-white dark:bg-gray-800 overflow-hidden">
-    <div className="flex flex-col md:flex-row items-center justify-between">
-        <div className="flex items-center justify-start w-full flex-grow">
-            <a href="#" className="inline-block relative pr-2">
-                <img alt="profil" src="/images/person/1.jpg" className="mx-auto object-cover rounded-full h-10 w-10 "/>
-            </a>
-
-        <div className="md:block flex-1">
-            <span className="w-full px-3 py-1 text-sm rounded-full text-white bg-blue-500">
-                English & French
-            </span>
-        </div>
-        </div>
-    </div>
-    <p className="text-gray-800 dark:text-white text-lg mt-4 mb-2">
-        Need a designer to form branding for my business.
-    </p>
-    <p className="text-gray-400 font-normal text-sm">
-        Looking for a talented brand designer to create all the branding materials for my new startup. This should be a long term project and my hope I hight on the person whom I would like to hire.
-    </p>
-    <div className="flex items-center rounded justify-between p-2 bg-blue-100 my-6">
-        <div className="flex items-start w-full justify-between">
-            <p className="flex-grow w-full text-2xl text-gray-700">
-                <span className="text-gray-400 font-light text-md">
-                    $
-                </span>
-                4,500
-                <span className="text-sm font-light text-gray-400">
-                    /Month
-                </span>
-            </p>
-            <span className="px-3 py-1 flex-none text-sm rounded-full text-blue-500 border border-blue-500">
-                Full time
-            </span>
-        </div>
-    </div>
-    <button type="button" className="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-        Apply for this Job
-    </button>
-                    </div>
-
-                    </div>
-                </div>
-        </div> */}
-
-
             <div className="container mx-auto py-2 ">
             <div className="relative  mx-auto px-4 sm:px-6 lg:px-4 ">
-        <div className="pricing-box max-w-lg mx-auto rounded-lg shadow overflow-hidden lg:max-w-none lg:flex">
+            <div className="pricing-box max-w-lg mx-auto rounded-lg shadow overflow-hidden lg:max-w-none lg:flex">
 
             <div className="bg-white dark:bg-gray-800 px-6 py-8 lg:flex-shrink-1 lg:p-12">
             <div className="flex items-center">
 
                 <h2 className="uppercase text-2xl leading-9 font-extrabold text-navy-800 sm:text-3xl sm:leading-9 dark:text-white">
-                Togo - Ghana Adventure &amp; Culinary Trip
+                {props.tourName}
                 </h2>
                 <br />
                 <br />
@@ -82,31 +28,17 @@ const TourDestination = () => {
                 </h4>
 
             <p className="my-5 text-base leading-6 text-gray-800 dark:text-gray-200 text-justify ">
-            Explore West Africa, the place that is known for rich culture, legacy, warmth and cadence. Find where nature is as yet unadulterated and warmth streams without any problem. Ghana, formally know as the Gold Coast sits between Côte d’ivoire and Togo while sharing a boarder with Burkina Faso to the north. It came in to prominence in its early days for its huge gold reserves. There are many reasons why a tourists will choose Ghana as a place to experience. Ranging from colonial era castles, to beaches, to scenic high routs etc.
+            {props.tourOverview }
             </p>   
             <div className="w-full md:w-[100%] h-auto ">
-                        <TourCarousel />
+            <TourCarousel />
             </div>
-            {/* <div className="flex items-center my-5 p-8 bg-navy-500 text-white text-justify rounded-lg ">
-            Togo & Ghana are both countries found in the West Africa. They host extremely colourful and diverse cultures as well as tourist sites. Togo is a nation in the Gulf of Guinea that lies between Ghana and Benin. Its is know for its serene beaches, busy markets and scenic spots which make it ideal for vacations and tours. You are guaranteed to have a memorable time anytime you visit.
-            </div>      */}
-
-           
-
-            {/* <p className="mt-6 text-base leading-6 text-gray-500 dark:text-gray-200 text-justify ">
-
-                Ghana, formally know as the Gold Coast sits between Côte d’ivoire and Togo while sharing a boarder with Burkina Faso to the north. It came in to prominence in its early days for its huge gold reserves. There are many reasons why a tourists will choose Ghana as a place to experience. Ranging from colonial era castles, to beaches, to scenic high routs etc.
-            </p> */}
-
-
-
 
             <div className="mt-8">
                 <div className="flex items-center">
 
                 <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-blue-600">
                     Package Includes
-
                 </h4>
                 <div className="flex-1 border-t-2 border-gray-200">
                 </div>
@@ -168,7 +100,7 @@ const TourDestination = () => {
   </div>
 </div>
 
-<img src="/images/tours/elephant.jpg" alt="Ghana &amp; Togo" className="w-full h-auto rounded-lg my-5 shadow bg-cover " />
+<img src={props.tourImage} alt={props.tourImageAlt} className="w-full h-auto rounded-lg my-5 shadow bg-cover " />
             </div>
             <div className="mt-8">
                 <div className="flex items-center">
@@ -299,37 +231,11 @@ const TourDestination = () => {
   Unforgettable experience in West Africa.
   </p>
   <p className="text-gray-500 font-normal text-sm text-justify ">
-  Togo & Ghana are both countries found in the West Africa. They host extremely colourful and diverse cultures as well as tourist sites. Togo is a nation in the Gulf of Guinea that lies between Ghana and Benin. Its is know for its serene beaches, busy markets and scenic spots which make it ideal for vacations and tours. You are guaranteed to have a memorable time anytime you visit.
+{props.tourOverview2}
   </p>
-  <div className="flex items-center rounded justify-between p-2 bg-blue-100 my-6">
-    <div className="flex items-start w-full justify-between">
-      <p className="flex-grow w-full text-2xl text-gray-700">
-        <span className="text-gray-400 font-light text-md">
-          $
-        </span>
-        2,399
-        {/* <span className="text-sm font-light text-gray-400">
-          /Month
-        </span> */}
-      </p>
-      <span className="px-3 py-1 flex-none text-sm rounded-full text-blue-500 border border-blue-500">
-        Double Occupancy
-      </span>
-    </div>
-  </div>
-  <div className="flex items-center rounded justify-between p-2 bg-blue-100 my-6">
-    <div className="flex items-start w-full justify-between">
-      <p className="flex-grow w-full text-2xl text-gray-700">
-        <span className="text-gray-400 font-light text-md">
-          $
-        </span>
-        2,799
-      </p>
-      <span className="px-3 py-1 flex-none text-sm rounded-full text-blue-500 border border-blue-500">
-        Single Occupancy
-      </span>
-    </div>
-  </div>
+{props.tourPackageWithPrice1}
+{props.tourPackageWithPrice2}
+
   <button type="button" className="py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
     Book This Tour
   </button>
@@ -356,7 +262,7 @@ const TourDestination = () => {
                 </div>
                   
 
-                  <ItineraryCard />
+                  {props.tourItineraryCard}
 
                 </div>
             </div>

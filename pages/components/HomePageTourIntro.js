@@ -37,7 +37,7 @@ const HomePageTourIntro = () => {
             <h2 className="text-3xl text-yellow-300 dark:text-yellow-300 font-medium title-font mb-2  ">
             7 Days / 6 Nights <br />in Egypt </h2>
           <p className="leading-relaxed text-white font-bold ">{tourOverviewEgyptOne}</p>
-          <Link href="/tours/togo-ghana-adventure-and-culinary-trip">
+          <Link href="/tours/egypt-7-days-6-nights-luxury-trip">
             <a className="mt-3 dark:text-blue-300 text-cyan-100 text-lg inline-flex items-center ">Learn More
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7" />
