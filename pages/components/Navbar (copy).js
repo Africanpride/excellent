@@ -37,11 +37,27 @@ export default function Navbar({props}) {
    };
 
   // create mobile menu
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
+  useEffect(() => {
+    if(mobileMenuOpen){
+      setMobileMenu(true);
+    }
+    else{
+      setMobileMenu(false);
+    }
+  }
+  ,[mobileMenuOpen])
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  }
+
+
+
+
   const { asPath, pathname } = useRouter();
-  const router = useRouter();
 
   const [scrollY, setScrollY] = useState(0);
   const [fixed, setFixed] = useState("");
@@ -65,15 +81,11 @@ export default function Navbar({props}) {
       return background;
     }
 
-    const handleStart = (url) => (url !== router.asPath) && setNavbarOpen(false);
-    router.events.on('routeChangeStart', handleStart)
-
     watchScroll();
     runSetFixed();
     runBackgroundColorLogic();
     return () => {
       window.removeEventListener("scroll", getScroll);
-      // router.events.off('routeChangeStart', handleStart)
     };
   }, [fixed, scrollY, background]);
 
@@ -92,20 +104,6 @@ export default function Navbar({props}) {
     <Head>
       <title>Excel Travel Services &#124;	 {capitalizeTitle()}</title>
     </Head>
-
-    <div className={"fixed z-30 inset-0 flex-col justify-center items-center object-fit min-h-screen h-full w-auto bg-slate-600  dark:bg-pink-500 md:mx-auto px-4" + (navbarOpen ? " flex" : " hidden")
-  } >
-
-            <nav className="flex flex-col items-start justify-center text-4xl font-extrabold italic text-white dark:text-navy-800">
-        <Link href="/" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Home</a></Link>     
-        <Link href="/about" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">About</a></Link>     
-        <Link href="/bookings " ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Bookings</a></Link>     
-        <Link href="/tours/" ><a className="p-2 mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Tour Packages</a></Link>     
-        <Link href="/inquiries" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Inquiries</a></Link>     
-        <Link href="/news" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">News</a></Link>     
-      </nav>
-
-    </div>
 
     <header id='MainNav'  className={`${background} md:px-5  z-30  body-font  top-0 w-full ${fixed}`}  >
     <div className=" mx-auto flex p-5  md:flex-row  justify-between items-center">
@@ -152,16 +150,11 @@ export default function Navbar({props}) {
       {renderThemeChanger()}
       </div>
       </div>
-      <div className="md:hidden block z-50 flex justify-center items-center" >
-      <MenuAlt3Icon 
-      className="w-10 h-10 text-white border-2  shadow" 
-      role="button" 
-      onClick={() => setNavbarOpen(!navbarOpen)}
-      />
-      <div className='ml-3 rounded-full bg-opacity-95 border-opacity-80  '>
-      {renderThemeChanger()}
+      <div className="md:hidden block" >
+      <MenuAlt3Icon className="w-10 h-10 text-white border-2  shadow" role="button" onClick={(theme) => setTheme('dark')} />
       </div>
-      </div>
+
+
   </div>
 </header>
     

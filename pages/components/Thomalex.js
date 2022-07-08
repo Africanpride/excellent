@@ -34,7 +34,7 @@ export default function Thomalex() {
         width="100%" 
         height="600px" 
         border="none"
-        max-height="700px"
+        max-height="auto"
         src="https://exceltravel.resvoyage.com/widget/index?widgetId=f869c080-41a0-4c25-a7ce-f464f9e2bf64">
         </iframe>
         </div>
