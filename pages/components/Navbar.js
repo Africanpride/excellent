@@ -84,7 +84,7 @@ export default function Navbar({props}) {
       <title>Excel Travel Services &#124;	 {capitalizeTitle()}</title>
     </Head>
 
-    <header id='MainNav'  className={`${background} z-30  body-font  top-0 w-full ${fixed}`}  >
+    <header id='MainNav'  className={`${background} md:px-5  z-30  body-font  top-0 w-full ${fixed}`}  >
     <div className=" mx-auto flex p-5  md:flex-row  justify-between items-center">
     <div className='inline-flex items-center justify-center'>
     <div  className="pr-2">
@@ -96,7 +96,7 @@ export default function Navbar({props}) {
     </div>
     <Link href="/">
       <a>        
-      <div className="ml-3  pl-4 py-2 border-l border-navy-300 border-opacity-30 text-white text-bold dark:text-white text-2xl ">Excel Travel Services  <span className='text-base '>&trade;</span>
+      <div className="ml-3  pl-4 py-2 border-l border-navy-300 border-opacity-30 text-white text-bold dark:text-white text-xl md:text-2xl ">Excel Travel Services  <span className='text-base '>&trade;</span>
       </div>
       </a>
     </Link>

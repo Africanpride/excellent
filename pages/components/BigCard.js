@@ -26,7 +26,7 @@ import biker from '../../public/assets/biker.png'
       return (
         <> 
 
-        <div className=" mx-auto  dark:bg-slate-800  shadow-md overflow-hidden md:w-full my-5">
+        <div className=" mx-auto  dark:bg-slate-800  shadow-md overflow-hidden md:w-full my-2 md:my-5">
           <div className="md:flex">
             <div className="md:shrink-0">
               <img className="h-72 w-full object-cover md:h-full md:w-72 md:rounded-l-lg "  src={packageImage} alt="Man looking at item at a store" />

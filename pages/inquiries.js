@@ -21,7 +21,7 @@ export default function Inquiries() {
 
 </div>
     <section className="dark:text-gray-400 text-gray-600 dark:bg-navy-900 bg-white body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-2 md:px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 dark:text-white text-gray-600"><span className='capitalize '>We are very eager to hear from you! </span> <br />
          </h1>

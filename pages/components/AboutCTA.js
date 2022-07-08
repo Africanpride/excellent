@@ -13,7 +13,7 @@ const AboutCTA = ({}) => {
   return (
     <> 
 <section className="bg-blue-50 pt-15 text-gray-800 body-font  dark:text-blue-200 dark:bg-slate-900 dark:bg-opacity-20 border-b dark:border-slate-800  ">
-  <div className="container px-5 py-24 mx-auto">
+  <div className="container px-2 md:px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
       <h2 className="text-xs text-blue-400 tracking-widest font-medium title-font mb-1">
         { t('about:our-mantra')}</h2>
@@ -21,7 +21,7 @@ const AboutCTA = ({}) => {
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Active adventure tours are interest based tours that connect travelers to nature and culture while exploring destinations around the world. Hike, bike, cruise and swim your way through jaw dropping scenery, all while being surrounded by other likeminded travelers. </p>
     </div>
 
-   <div className="pb-5 px-5">
+   <div className="md:pb-5 md:px-5">
 
     <BigCard bgColor='bg-navy-900' txtColor='text-navy-400' />
 
@@ -37,7 +37,7 @@ const AboutCTA = ({}) => {
           </svg>
         </a>
       </div>
-      <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2  border-gray-200 border-opacity-60 dark:border-gray-800">
+      <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 md:border-l-2  border-gray-200 border-opacity-60 dark:border-gray-800">
         <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Trip Planning Assistance</h2>
         <p className="leading-relaxed text-base mb-4">We are ready to assist you in everyway as you plan the trip of your dream. Get in touch with us through our customer service chanels and social media. </p>
         <a className="text-blue-400 inline-flex items-center"><Link href="/inquiries" >Learn More</Link>
@@ -46,7 +46,7 @@ const AboutCTA = ({}) => {
           </svg>
         </a>
       </div>
-      <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2  border-gray-200 border-opacity-60  dark:border-gray-800">
+      <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 md:border-l-2  border-gray-200 border-opacity-60  dark:border-gray-800">
         <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Unbeatable Tours</h2>
         <p className="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
         <a className="text-blue-400 inline-flex items-center">Learn More
@@ -55,7 +55,7 @@ const AboutCTA = ({}) => {
           </svg>
         </a>
       </div>
-      <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2  border-gray-200 border-opacity-60  dark:border-gray-800">
+      <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 md:border-l-2  border-gray-200 border-opacity-60  dark:border-gray-800">
         <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Cheap but Classy</h2>
         <p className="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
         <a className="text-blue-400 inline-flex items-center">Learn More
@@ -71,11 +71,11 @@ const AboutCTA = ({}) => {
 
 
 
-<section className='bg-white dark:text-gray-400 dark:bg-gray-900 dark:body-font h-screen w-full md:mx-auto  px-4'>
+<section className='bg-white dark:text-gray-400 dark:bg-gray-900 dark:body-font h-auto w-full md:mx-auto  px-4'>
 
-  <div className="container px-5 py-24 mx-auto">
+  <div className="container md:px-5 py-5 md:py-24 mx-auto">
     <div className="flex flex-wrap -m-4">
-      <div className="p-4 md:w-1/3">
+      <div className="p-2 md:p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200 dark:border-gray-800 border-opacity-60 rounded-lg overflow-hidden">
           <Image 
           className="lg:h-48 md:h-36 w-full object-cover object-center" 
@@ -111,7 +111,7 @@ const AboutCTA = ({}) => {
           </div>
         </div>
       </div>
-      <div className="p-4 md:w-1/3">
+      <div className="p-2 md:p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200  dark:border-gray-800 border-opacity-60 rounded-lg overflow-hidden">
         <Image 
           className="lg:h-48 md:h-36 w-full object-cover object-center" 
@@ -146,7 +146,7 @@ const AboutCTA = ({}) => {
           </div>
         </div>
       </div>
-      <div className="p-4 md:w-1/3">
+      <div className="p-2 md:p-4 md:w-1/3">
         <div className="h-full border-2 border-gray-200  dark:border-gray-800 border-opacity-60 rounded-lg overflow-hidden">
         <Image 
           className="lg:h-48 md:h-36 w-full object-cover object-center" 

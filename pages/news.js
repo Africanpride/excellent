@@ -11,11 +11,11 @@ export default function News({title = 'News & Articles'}) {
         <>    
         <Heading title={'Travel News'} subtitle={subtitle} imageSrc={'/images/cards/holiday5.jpg'}  />  
         <div className="w-full bg-gray-200 dark:bg-navy-900">
-        <div className="py-10 px-5 container mx-auto flex flex-wrap justify-evenly "  >
-        <SmallCard />
-        <SmallCard />
-        <SmallCard />
-        <SmallCard />
+        <div className="py-4 md:py-10 px2 md:px-5 container mx-auto flex flex-wrap justify-evenly "  >
+                <SmallCard />
+                <SmallCard />
+                <SmallCard />
+                <SmallCard />
  
 
         </div>

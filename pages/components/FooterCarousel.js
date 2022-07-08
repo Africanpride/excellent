@@ -39,13 +39,13 @@ const FooterCarousel = () => {
   autoPlay
   autoPlaySpeed={6000}
   centerMode={false}
-  className="bg-transparent dark:bg-slate-900"
+  className="bg-transparent dark:bg-slate-900 "
   containerClass="container-with-dots"
   dotListClass=""
   draggable
   focusOnSelect={false}
   infinite
-  itemClass="px-1 py-2"
+  itemClass="p-4 md:p-2 "
   keyBoardControl
   minimumTouchDrag={80}
   pauseOnHover

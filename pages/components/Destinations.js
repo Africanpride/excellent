@@ -13,11 +13,11 @@ function Destinations() {
     <>
 
 <section className="text-gray-800 dark:text-gray-400 bg-gray-200 dark:bg-gray-900 body-font">
-        <div className="container px-5 py-5 mx-auto">
+        <div className="container md:px-5 md:py-5 mx-auto">
           <div className="flex flex-wrap -m-4">
             
           <Link href="/tours/togo-ghana-adventure-and-culinary-trip">
-            <a className="p-4 lg:w-1/3">
+            <a className="p-2 md:p-4 lg:w-1/3">
 
             <div className="h-full shadow  bg-gray-200  dark:bg-gray-800 dark:bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
              {/* Add  background image  */}
@@ -51,7 +51,7 @@ function Destinations() {
             </a>
             </Link>
           <Link href="/tours/egypt-7-days-6-nights-luxury-trip">
-            <a className="p-4 lg:w-1/3">
+            <a className="p-2 md:p-4 lg:w-1/3">
 
             <div className="h-full shadow  bg-gray-200  dark:bg-gray-800 dark:bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
              {/* Add  background image  */}
@@ -85,7 +85,7 @@ function Destinations() {
             </a>
             </Link>
           <Link href="/tours/egypt-5-days-4-nights-luxury-trip">
-            <a className="p-4 lg:w-1/3">
+            <a className="p-2 md:p-4 lg:w-1/3">
 
             <div className="h-full shadow  bg-gray-200  dark:bg-gray-800 dark:bg-opacity-40 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
              {/* Add  background image  */}

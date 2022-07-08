@@ -14,7 +14,8 @@ const HomePageTourIntro = () => {
     body-font border-b md:border-gray-200 md:pt-10 dark:border-gray-800   ">
   <div className=" px-3 py-5 md:py-24 mx-auto flex flex-wrap">
     <div className="lg:w-full mx-auto md:px-20 lg:px-32 ">
-      <div className="flex flex-wrap w-full bg-gray-800 py-32 md:px-5 relative mb-4 rounded-xl md:h-[450px] justify-center items-center">
+
+      <div className=" mb-2 flex flex-wrap w-full bg-gray-800 py-32 md:px-5 relative rounded-xl md:h-[450px] justify-center items-center">
       <img alt="gallery" className="w-full object-cover h-full object-center block opacity-60 mix-blend-hard-light	 rounded-xl absolute inset-0" src="/images/cards/holiday2.jpg" />
         <div className="text-center relative z-10 w-full">
           <h2 className="text-2xl md:text-4xl text-yellow-300 dark:text-yellow-300 font-medium title-font mb-2  ">
@@ -29,7 +30,8 @@ const HomePageTourIntro = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-wrap -mx-2">
+
+      <div className="flex flex-wrap -mx-2 mb-2">
         <div className="px-2 md:w-1/2">
           <div className="flex flex-wrap w-full bg-yellow-800 sm:py-24 py-16 sm:px-10 px-6 relative  rounded-xl">
             <img alt="gallery" className="w-full object-cover h-full object-center block  rounded-xl  opacity-70 absolute inset-0" src="/images/cards/egypt3.jpg" />
@@ -47,7 +49,8 @@ const HomePageTourIntro = () => {
             </div>
           </div>
         </div>
-        <div className="px-2 md:w-1/2 my-2 md:my-5 ">
+
+        <div className="px-2 md:w-1/2 mt-2 md:mt-0 ">
           <div className="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative  rounded-xl ">
             <img alt="gallery" className="w-full object-cover h-full object-center block opacity-60 mix-blend-hard-light	 rounded-xl absolute inset-0" src="/images/cards/egypt5.jpg" />
             <div className="text-center relative z-10 w-full">

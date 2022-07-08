@@ -17,7 +17,7 @@ const TourDestination = (props) => {
             <div className="bg-white dark:bg-gray-800 px-6 py-8 lg:flex-shrink-1 lg:p-12">
             <div className="flex items-center">
 
-                <h2 className="uppercase text-2xl leading-9 font-extrabold text-navy-800 sm:text-3xl sm:leading-9 dark:text-white">
+                <h2 className="uppercase md:text-2xl text-xl font-extrabold text-navy-800 dark:text-white">
                 {props.tourName}
                 </h2>
                 <br />
@@ -27,7 +27,7 @@ const TourDestination = (props) => {
                     Overview of the Tour
                 </h4>
 
-            <p className="my-5 text-base leading-6 text-gray-800 dark:text-gray-200 text-justify ">
+            <p className="my-5 text-base leading-6 text-gray-800 dark:text-gray-200 md:text-justify ">
             {props.tourOverview }
             </p>   
             <div className="w-full md:w-[100%] h-auto ">
