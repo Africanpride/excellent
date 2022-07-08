@@ -13,7 +13,7 @@ const subtitle = 'A Great option to book your next Flight, Hotel and Car for you
   // call a react components
     return (
       <>    
-      <Heading title={'Bookings'} subtitle={subtitle} imageSrc={'/images/cards/holiday2.avif'}  />
+      <Heading title={'Bookings'} subtitle={subtitle} imageSrc={'/images/cards/holiday2.jpg'}  />
       <Thomalex />
       </>
     );

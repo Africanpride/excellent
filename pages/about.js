@@ -7,7 +7,7 @@ export default function About()
   return (
 
     <>
-    <Heading imageSrc={'/images/cards/holiday.avif'}  />
+    <Heading imageSrc={'/images/cards/holiday.jpg'}  />
        <div className=''>
        <AboutCTA />
        </div>

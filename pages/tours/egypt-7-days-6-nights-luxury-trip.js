@@ -41,21 +41,21 @@ const destinationEgype1 = {
   additionalOffers1: 
   <AdditionalOffer 
   offerTitle={'1- Super Deluxe Hotel & Nile Cruise'} 
-  image={'/images/cards/hotels/holiday3.avif'} 
+  image={'/images/cards/hotels/holiday3.jpg'} 
   offerText={'Price per person in a single room in super deluxe Hotel and Nile cruise device is 4700$ the price per person in a double room in super deluxe hotel and Nile cruise service is 4350$'}
   offerPrice='$4700 - $4350'
   />,
   additionalOffers2: 
   <AdditionalOffer 
   offerTitle={'2- Super Deluxe Hotel & Nile Cruise'} 
-  image={'/images/cards/hotels/holiday.avif'} 
+  image={'/images/cards/hotels/holiday.jpg'} 
   offerText={'Price per person in deluxe hotel and Nile cruise service in single room 4200$ Price per person in double room deluxe hotel and Nile cruise service 3900$'}
     offerPrice='$4200 - $3900'
   />,
   additionalOffers3: 
   <AdditionalOffer 
   offerTitle={'3- Super Deluxe Hotel & Nile Cruise'} 
-  image={'/images/cards/hotels/holiday2.avif'} 
+  image={'/images/cards/hotels/holiday2.jpg'} 
   offerText={'Price per person in single room standard service 3300$ Per person in double room standard service 3100$'}
     offerPrice='$3300 - $3100'
   />,

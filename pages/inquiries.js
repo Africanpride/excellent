@@ -15,7 +15,7 @@ export default function Inquiries() {
   return (
 
     <>
-    <Heading title={'Help & Inquiries'}  imageSrc={'/images/cards/holiday3.avif'} />
+    <Heading title={'Help & Inquiries'}  imageSrc={'/images/cards/holiday3.jpg'} />
     
 <div className=''  >
 

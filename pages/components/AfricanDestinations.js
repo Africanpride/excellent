@@ -18,7 +18,7 @@ function AfricanDestinations() {
       <p className="lg:w-1/2 w-full leading-relaxed dark:text-gray-400 text-opacity-90">From Banjul to Johannesburg, Africa boasts more World Heritage Sites than any other continent in the world. This Mediterranean gem offers one of the most famous and delicious cuisines in the world. Every city you travel to will give you an entirely different experience, with unique aspects to topography, cuisine, and scenery!</p>
     </div>
     <div className="flex flex-wrap -m-4">
-      <div className="xl:w-1/4 md:w-1/2 p-4">
+      <div className="xl:w-1/4 md:w-1/2 p-2">
         <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
         <Image 
           className="h-40 rounded w-full object-cover object-center mb-6" 
@@ -34,7 +34,7 @@ function AfricanDestinations() {
           <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
         </div>
       </div>
-      <div className="xl:w-1/4 md:w-1/2 p-4">
+      <div className="xl:w-1/4 md:w-1/2 p-2">
         <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
           <Image 
           className="h-40 rounded w-full object-cover object-center mb-6" 
@@ -49,7 +49,7 @@ function AfricanDestinations() {
           <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
         </div>
       </div>
-      <div className="xl:w-1/4 md:w-1/2 p-4">
+      <div className="xl:w-1/4 md:w-1/2 p-2">
         <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
           
         <Image 
@@ -66,7 +66,7 @@ function AfricanDestinations() {
           <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
         </div>
       </div>
-      <div className="xl:w-1/4 md:w-1/2 p-4">
+      <div className="xl:w-1/4 md:w-1/2 p-2">
         <div className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
 
         <Image 

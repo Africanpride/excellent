@@ -41,21 +41,21 @@ const destinationEgype1 = {
   additionalOffers1: 
   <AdditionalOffer 
   offerTitle={'1- Super Deluxe Service'} 
-  image={'/images/cards/hotels/holiday3.avif'} 
+  image={'/images/cards/hotels/holiday3.jpg'} 
   offerText={'$3050 in single room super deluxe service & In double room 2800$ super deluxe service '}
   offerPrice='$2800 - $3050'
   />,
   additionalOffers2: 
   <AdditionalOffer 
   offerTitle={'2- Super Deluxe Service'} 
-  image={'/images/cards/hotels/holiday.avif'} 
+  image={'/images/cards/hotels/holiday.jpg'} 
   offerText={'Per person single room deluxe service for $2800 & Double room deluxe device $2500'}
     offerPrice='$2500 - $2800'
   />,
   additionalOffers3: 
   <AdditionalOffer 
   offerTitle={'3- Super Deluxe Service'} 
-  image={'/images/cards/hotels/holiday2.avif'} 
+  image={'/images/cards/hotels/holiday2.jpg'} 
   offerText={'Per person single room deluxe service for $2250 & Double room deluxe device $1900'}
     offerPrice='$1900 - $2250'
   />,
