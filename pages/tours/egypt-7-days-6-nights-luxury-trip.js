@@ -11,6 +11,7 @@ import PaymentLogos from '../components/PaymentLogos';
 // pass html element to virtual dom
 import parse from 'html-react-parser';
 import AdditionalOffer from '../components/AdditionalOffer'
+import { faGuilded } from '@fortawesome/free-brands-svg-icons'
 
 const egyptPackageItem = parse('');
 
@@ -26,9 +27,8 @@ const destinationEgype1 = {
 
   tourImage: `/images/cards/egypt3.jpg`,
 
-  tourHighlight: [
-    'Akwapim hills', 'Lome Beach', 'Aneho Beach', 'Togo Museum','Kpalime City Tour','Keta Beaches and St. Paul Lighthouse','W.E. B. Du Bois Centre', 'Kwame Nkrumah Mausoleum', 'Agou and Yikpa Waterfalls', 'Agou and Yikpa Waterfalls', 'Agbodrafo Slave house and Aného'
-  ], 
+  tourHighlight: ['Tourism Guild', 'Reception and Travel', 'All Transfers', 'All Entrance and Tickets', 'Two Flights inside Egypt','All Meals During the Trip'],
+ 
   tourPayment: 'Payment is required upon arrival',
   tourPaymentLogos: <PaymentLogos />,
 
@@ -63,41 +63,47 @@ const destinationEgype1 = {
 
   tourItinerary: [
     {
-      day: 1,
+      day: 'Day 1',
       title: 'Arrival in Cairo',
-      description: 'Arrive in Cairo and take a tour of the city. We will be staying in the hotel for the night.',
+      description: 'Arrival at Cairo Airport and a reception for accommodation at the 5-star Steinberger Hotel next to the pyramids, have a meeting for acquaintance.',
       image: '/images/tours/cairo-arrival.jpg'
     },
     {
-      day: 2,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
+      day: 'Day 2',
+      title: 'Pyramids of Giza',
+      description: 'After breakfast, visit the pyramids of Giza and the Sphinx, ride a camel, then visit the Cairo Museum and go around the streets of Cairo and shopping.',
       image: '/images/tours/cairo-city-tour.jpg'
     },
     {
-      day: 3,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
+      day: 'Day 3',
+      title: 'Travel from Cairo Airport Alp',
+      description: 'In the morning Travel from Cairo Airport Alp Luxor Airport Arrival, reception and visit to Karnak and Luxor temples, then accommodation in a 5-star Nile boat.',
       image: '/images/tours/cairo-city-tour.jpg'
     },
     {
-      day: 4,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
+      day: 'Day 4',
+      title: 'A visit to the tombs',
+      description: 'Morning - A visit to the tombs of the Valley of the Kings on the West Bank in Luxor, a visit to the temple of Queen Hatshepsut, and a visit to the Colossi of Memnon Then return to the Nile boat, sail up the Nile in the afternoon to Edfu.',
       image: '/images/tours/cairo-city-tour.jpg'
     },
     {
-      day: 5,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
+      day: 'Day 5',
+      title: 'the Temple of Horus in Edfu',
+      description: 'A visit to the Temple of Horus in Edfu using a chariot, then return to the boat and sail to visit the Temple of Kom Ombo in the evening with the Mummification Museum and return to the boat and sail to Aswan.',
       image: '/images/tours/cairo-city-tour.jpg'
     },
     {
-      day: 6,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
+      day:'Day 6',
+      title: 'visit the Temple of Isis (Phila)',
+      description: 'Morning arrival in Aswan, visit the Temple of Isis (Phila), the Unfinished Obelisk, the High Dam, and return to the boat.',
       image: '/images/tours/cairo-city-tour.jpg'
-    }
+    },
+    {
+      day:'Day 7',
+      title: 'Departure from Aswan Airport',
+      description: 'Leaving the boat and traveling from Aswan Airport to Cairo Airport, then travel abroad for international flight.',
+      image: '/images/tours/cairo-city-tour.jpg'
+    },
   ],
   tourItineraryCard: <ItineraryCard />,
   tourCarousel: <TourCarousel />

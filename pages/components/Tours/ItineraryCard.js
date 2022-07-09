@@ -7,10 +7,12 @@ const ItineraryCard = () => {
 <div className="container px-5 py-10 mx-auto flex flex-wrap">
   <div className="flex flex-wrap w-full">
     <div className="max-w-xs  md:py-6">
+      
       <div className="flex relative pb-12 text-left">
         <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
           <div className="h-full w-1 bg-gray-200 pointer-events-none" />
         </div>
+
         <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 inline-flex items-center justify-center text-white relative z-10">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -21,6 +23,7 @@ const ItineraryCard = () => {
           <p className="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
         </div>
       </div>
+
       <div className="flex relative pb-12 text-left">
         <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
           <div className="h-full w-1 bg-gray-200 pointer-events-none" />
@@ -35,6 +38,7 @@ const ItineraryCard = () => {
           <p className="leading-relaxed">Vice migas literally kitsch +1 pok pok. Truffaut hot chicken slow-carb health goth, vape typewriter.</p>
         </div>
       </div>
+
       <div className="flex relative pb-12 text-left">
         <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
           <div className="h-full w-1 bg-gray-200 pointer-events-none" />
@@ -50,6 +54,7 @@ const ItineraryCard = () => {
           <p className="leading-relaxed">Coloring book nar whal glossier master cleanse umami. Salvia +1 master cleanse blog taiyaki.</p>
         </div>
       </div>
+
       <div className="flex relative pb-12 text-left">
         <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
           <div className="h-full w-1 bg-gray-200 pointer-events-none" />

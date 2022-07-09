@@ -63,39 +63,33 @@ const destinationEgype1 = {
 
   tourItinerary: [
     {
-      day: 1,
-      title: 'Arrival in Cairo',
-      description: 'Arrive in Cairo and take a tour of the city. We will be staying in the hotel for the night.',
+      day: 'Day 1',
+      title: 'Nile Cruise',
+      description: 'You will be met in Luxor and transferred to your five stars full board Nile Cruise. In the afternoon you will start your visit in Luxor with the tour to the East Bank, where you will visit the largest temple in Egypt with is Karnak Temples, then to a smaller but not less important one called Luxor Temple where you get to see the combination between three different religions in one sight, after the tour will drive you back to your cruise ship..',
       image: '/images/tours/cairo-arrival.jpg'
     },
     {
-      day: 2,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
+      day: 'Day 2',
+      title: 'cruise ship',
+      description: 'Overnight on board in Luxor. – After breakfast we will pick you up from the cruise going to visit the West Bank of Luxor where you will visit Valley of the Kings, Queen Hatshepsut’s Mortuary Temple, and the Colossi Statues of Memnon. After your tour will get back to the cruise ship set sail towards Edfu acrossing Esna lock. Overnight on board in Edfu.',
       image: '/images/tours/cairo-city-tour.jpg'
     },
     {
-      day: 3,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
+      day: 'Day 3',
+      title: 'visit Edfu Templ',
+      description: 'After breakfast, we will pick you up from the cruise going to visit Edfu Temple the best preserved temple in Egypt and the 2nd biggest one after Karnak, this temple dedicated to the Falcon god Horus. after your tour will get back to the cruise and set sail towards the temple of Komombo, dedicated to the crocodile god Sobek. you will enjoy the visit at this temple then set sail towards Aswan.',
       image: '/images/tours/cairo-city-tour.jpg'
     },
     {
-      day: 4,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
+      day: 'Day 4',
+      title: 'tour to Philae Temple',
+      description: 'Morning after your breakfast we will pick you up from the cruise going to visit the High Dam, followed by a tour to Philae Temple on an Island dedicated to Goddess Isis, after the tour will return to the cruise.',
       image: '/images/tours/cairo-city-tour.jpg'
     },
     {
-      day: 5,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
-      image: '/images/tours/cairo-city-tour.jpg'
-    },
-    {
-      day: 6,
-      title: 'Cairo City Tour',
-      description: 'Take a tour of the city. We will be staying in the hotel for the night.',
+      day: 'Day 5',
+      title: 'temples of Ramses II and Nefertiti',
+      description: 'Your cruise ship will prepare a breakfast box to take with you on your early morning departure to the magnificent temples of Ramses II and Nefertiti at Abu Simbel. Joining the sharing tour leaving Aswan at 4 AM towards Abu Simbel, you will get back to Aswan around 2 PM, will pick your luggage and will drive you to wherever you want to go in Aswan.',
       image: '/images/tours/cairo-city-tour.jpg'
     }
   ],

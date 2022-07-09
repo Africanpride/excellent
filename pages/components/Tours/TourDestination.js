@@ -118,99 +118,29 @@ const TourDestination = (props) => {
                 <div className="flex-1 border-t-2 border-gray-200">
                 </div>
                 </div>
+                
                 <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
-                <li className="flex items-start lg:col-span-1 py-1">
+              {/* array map through tourHighlight */}
+
+              {props.tourHighlight.map((highlight, index) => (
+
+                    <li key={index}  className="flex items-start lg:col-span-1 py-1">
                     <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width={6} height={6} stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                    <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width={6} 
+                    height={6} stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
                         <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                         </path>
                     </svg>
                     </div>
                     <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                    Akwapim hills 
+                    {highlight}
                     </p>
-                </li>
-                <li className="flex items-start lg:col-span-1 py-1">
-                    <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width={6} height={6} stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
-                        <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
-                        </path>
-                    </svg>
-                    </div>
-                    <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                    Kwame Nkrumah Mausoleum
-                    </p>
-                </li>
-                <li className="flex items-start lg:col-span-1 py-1">
-                    <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width={6} height={6} stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
-                        <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
-                        </path>
-                    </svg>
-                    </div>
-                    <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                    Agbodrafo Slave house and Aného 
-                    </p>
-                </li>
-                <li className="flex items-start lg:col-span-1 py-1">
-                    <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width={6} height={6} stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
-                        <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
-                        </path>
-                    </svg>
-                    </div>
-                    <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                    W.E. B. Du Bois Centre
-                    </p>
-                </li>
-                <li className="flex items-start lg:col-span-1 py-1">
-                    <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width={6} height={6} stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
-                        <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
-                        </path>
-                    </svg>
-                    </div>
-                    <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                    Kpalime City Tour                    </p>
-                </li>
-                <li className="flex items-start lg:col-span-1 py-1">
-                    <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width={6} height={6} stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
-                        <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
-                        </path>
-                    </svg>
-                    </div>
-                    <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                    Agou and Yikpa Waterfalls
-                    </p>
-                </li>
-                <li className="flex items-start lg:col-span-1 py-1">
-                    <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width={6} height={6} stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
-                        <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
-                        </path>
-                    </svg>
-                    </div>
-                    <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                    Agou and Yikpa Waterfalls
-                    </p>
-                </li>
-                <li className="flex items-start lg:col-span-1 py-1">
-                    <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width={6} height={6} stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
-                        <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
-                        </path>
-                    </svg>
-                    </div>
-                    <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                    Keta Beaches and St Paul Lighthouse
-                    </p>
-                </li>
-                </ul>
+                    </li>
+              ))}
+              </ul>
+            </div>
             </div>
 
-
-            </div>
             <div className="py-8 px-6 bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-start lg:p-8">
 
             <div className="shadow-lg rounded-xl w-full md:max-w-xs p-6 bg-white dark:bg-gray-800 overflow-hidden mb-5  ">
@@ -247,8 +177,14 @@ const TourDestination = (props) => {
 {props.tourPackageWithPrice5 }
 {props.tourPackageWithPrice6 }
 
-  <button type="button" className="my-5 py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200  text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+  <button type="button" className="my-2 py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200  text-sm  shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
     Book This Tour
+  </button>
+  <button type="button" className="my-2 py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200  text-sm lowercase  shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+  EXCEL@EXCELTRAVELSERVICES.COM
+  </button>
+  <button type="button" className="my-2 py-2 px-4  bg-blue-100 hover:bg-blue-600 hover:text-white focus:ring-blue-500 focus:ring-offset-blue-200 text-blue-500 w-full transition ease-in duration-200  text-sm lowercase  shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+  Hotline: +1 412 315 4817
   </button>
 </div>
 
@@ -272,8 +208,41 @@ const TourDestination = (props) => {
                 <div className="flex-1 border-t-2 border-gray-200">
                 </div>
                   
+                <div className="container px-2 py-10 mx-auto flex flex-wrap">
+  <div className="flex flex-wrap w-full">
+    <div className="max-w-xs  md:py-6">
 
-                  {props.tourItineraryCard}
+                  { props.tourItinerary.map((itinerary, index) => (
+
+                          <div  key={index}   className="flex relative pb-12 text-left">
+                          <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                            <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+                          </div>
+                  
+                          <div className="flex-shrink-0 w-10 h-10 
+                          rounded-full bg-blue-600 
+                          inline-flex items-center justify-center text-white 
+                          relative z-10">
+                            <svg fill="none" 
+                            stroke="currentColor" strokeLinecap="round" 
+                            strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" 
+                            viewBox="0 0 24 24">
+                              
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                          </div>
+                          <div className="flex-grow pl-4">
+                            <h2 className="font-medium title-font 
+                            text-sm dark:text-pink-500 text-gray-900 mb-1 uppercase
+                            tracking-wide ">{itinerary.day}</h2>
+                            <p className="leading-relaxed dark:text-navy-200 text-xl text-blue-800 italic font-bold ">{itinerary.title}</p>
+                            <p className="leading-relaxed">{itinerary.description}</p>
+                          </div>
+                        </div>
+                  ),)}
+</div>
+</div>
+</div>
 
                 </div>
             </div>

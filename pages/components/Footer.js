@@ -5,7 +5,7 @@ import {useEffect,useState } from 'react'
 import { useRouter } from 'next/router'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarChart, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF, faTwitter, faInstagram, faLinkedin, faYoutubeSquare} from "@fortawesome/free-brands-svg-icons"
+import { faFacebookF, faTwitter, faInstagram, faLinkedin, faYoutubeSquare, faPinterest } from "@fortawesome/free-brands-svg-icons"
 import FooterCarousel from './FooterCarousel'
 
 const Footer = () => {
@@ -18,16 +18,13 @@ const Footer = () => {
 
   <footer className="text-white bg-slate-900 lg:grid lg:grid-cols-5">
   <aside className="hidden  lg:relative lg:col-span-2 lg:block">
-
     <Image
-      className="object-fill w-full h-full z-10 grayscale "
+      className="object-fill w-full h-full z-10"
       // src={airport2}
-      src="/images/cards/airportLobby2.jpg"
+      src="/images/cards/airportNight.jpg"
       alt="Proceeding to Boarding Gate"
       layout='fill'
       objectFit='cover'
-    //   width={1120}
-    //   height={630}
     />
 
   </aside>
@@ -58,7 +55,7 @@ const Footer = () => {
         <FontAwesomeIcon icon={faLinkedin} className="text-gray-300 text-lg ml-2 "></FontAwesomeIcon>
         </a>
         <a className="ml-3 text-gray-400">
-        <FontAwesomeIcon icon={faYoutubeSquare} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faPinterest} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon>
         </a>
       </span>
       </div>
@@ -66,19 +63,19 @@ const Footer = () => {
         <div>
           <p className="font-medium">Support</p>
           <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
-            <a className="hover:opacity-75" href="">
+            <a className="hover:opacity-75" href="/inquiries">
               {" "}
               Contact{" "}
             </a>
-            <a className="hover:opacity-75" href="">
+            <a className="hover:opacity-75" href="/inquiries">
               {" "}
               FAQs{" "}
             </a>
-            <a className="hover:opacity-75" href="">
+            <a className="hover:opacity-75" href="inquiries">
               {" "}
               Live Chat{" "}
             </a>
-            <a className="hover:opacity-75" href="">
+            <a className="hover:opacity-75" href="/sitemap">
               {" "}
               Sitemap{" "}
             </a>
@@ -87,6 +84,10 @@ const Footer = () => {
         <div>
           <p className="font-medium">Popular Destinations</p>
           <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
+            <a className="hover:opacity-75" href="">
+              {" "}
+              Johannesburg{" "}
+            </a>
             <a className="hover:opacity-75" href="">
               {" "}
               Lome{" "}
