@@ -2,11 +2,9 @@ import React from 'react';
 import Heading from '../components/Heading';
 import SmallCard from '../components/SmallCard';
 import TourCardIntro from '../components/Tours/TourCardIntro';
-import TourDestination from '../components/Tours/TourDestination';
 import clip from 'text-clipper';
 import ItineraryCard from '../components/Tours/ItineraryCard';
 import TourCarousel from '../components/Tours/TourCarousel';
-import TourPackageWithPrice from '../components/TourPackageWithPrice';
 import PaymentLogos from '../components/PaymentLogos';
 // pass html element to virtual dom
 import parse from 'html-react-parser';
@@ -14,7 +12,7 @@ import AdditionalOffer from '../components/AdditionalOffer';
 
 const egyptPackageItem = parse('');
 
-const destinationEgype1 = {
+const destinationEgype2 = {
   tourName: 'Egypt: 5 Days, 4 nights Luxury Trip',
   tourOverview: `Egypt is a world-class diving destination. It offers an enormous variety of dive sites and dive operators, ranging from Red Sea shore sites to deep-diving liveaboard boats. There are many different types of diving available: wreck diving, wall diving, drift dives and night or cave diving. The Red Sea has many high quality dive centers offering PADI certification courses at affordable prices. One of the best things to do in Egypt is visit pyramids. Pyramids are very interesting, because they have been built by many people’s hands a long time ago. There are many pyramids in Egypt, such as the Great Pyramid of Giza and others (there is no place on earth that has so many pyramids)`,
 
@@ -132,7 +130,7 @@ const EgyptTripTwo = () => {
               <div className="bg-white dark:bg-gray-800 px-6 py-8 lg:flex-shrink-1 lg:p-12">
                 <div className="flex items-center">
                   <h2 className="uppercase md:text-2xl text-xl font-extrabold text-navy-800 dark:text-white">
-                    {destinationEgype1.tourName}.
+                    {destinationEgype2.tourName}.
                   </h2>
                   <br />
                   <br />
@@ -142,7 +140,7 @@ const EgyptTripTwo = () => {
                 </h4>
 
                 <p className="my-5 text-base leading-6 text-gray-800 dark:text-gray-200 md:text-justify ">
-                  {destinationEgype1.tourOverview}
+                  {destinationEgype2.tourOverview}
                 </p>
                 <div className="w-full md:w-[100%] h-auto ">
                   <TourCarousel />
@@ -299,7 +297,7 @@ const EgyptTripTwo = () => {
                     </div>
                   </div>
                 <ul>
-                  { destinationEgype1.additionalOffers &&  destinationEgype1.additionalOffers.map((offer, index) => ( 
+                  { destinationEgype2.additionalOffers &&  destinationEgype2.additionalOffers.map((offer, index) => ( 
                   <li key={index}>{
                                      <div
                                      className={
@@ -354,8 +352,8 @@ const EgyptTripTwo = () => {
                   }</li> ))}
                 </ul> 
                   <img
-                    src={destinationEgype1.tourImage}
-                    alt={destinationEgype1.tourImageAlt}
+                    src={destinationEgype2.tourImage}
+                    alt={destinationEgype2.tourImageAlt}
                     className="w-full h-auto rounded-lg my-5 shadow bg-cover "
                   />
                 </div>
@@ -370,7 +368,7 @@ const EgyptTripTwo = () => {
                   <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
                     {/* array map through tourHighlight */}
 
-                    {destinationEgype1.tourHighlight.map((highlight, index) => (
+                    {destinationEgype2.tourHighlight.map((highlight, index) => (
                       <li
                         key={index}
                         className="flex items-start lg:col-span-1 py-1"
@@ -424,17 +422,17 @@ const EgyptTripTwo = () => {
                     </div>
                   </div>
                   <p className="text-gray-800 dark:text-white text-lg mt-4 mb-2 text-left ">
-                    {destinationEgype1.tourOverview2Header}
+                    {destinationEgype2.tourOverview2Header}
                   </p>
                   <p className="text-gray-500 font-normal text-sm text-justify ">
-                    {destinationEgype1.tourOverview2}
+                    {destinationEgype2.tourOverview2}
                   </p>
-                  {/* {destinationEgype1.tourPackageWithPrice1}
-                {destinationEgype1.tourPackageWithPrice2}
-                {destinationEgype1.tourPackageWithPrice3}
-                {destinationEgype1.tourPackageWithPrice4}
-                {destinationEgype1.tourPackageWithPrice5}
-                {destinationEgype1.tourPackageWithPrice6} */}
+                  {/* {destinationEgype2.tourPackageWithPrice1}
+                {destinationEgype2.tourPackageWithPrice2}
+                {destinationEgype2.tourPackageWithPrice3}
+                {destinationEgype2.tourPackageWithPrice4}
+                {destinationEgype2.tourPackageWithPrice5}
+                {destinationEgype2.tourPackageWithPrice6} */}
 
                   <button
                     type="button"
@@ -478,7 +476,7 @@ const EgyptTripTwo = () => {
                     <div className="container px-2 py-10 mx-auto flex flex-wrap">
                       <div className="flex flex-wrap w-full">
                         <div className="max-w-xs  md:py-6">
-                          {destinationEgype1.tourItinerary.map(
+                          {destinationEgype2.tourItinerary.map(
                             (itinerary, index) => (
                               <div
                                 key={index}

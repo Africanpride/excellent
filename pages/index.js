@@ -18,7 +18,7 @@ export default function Home()
         "url('/images/landscape/home.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"
     }}
     >
-      {/* <div className="absolute inset-0 bg-navy-900 opacity-60"></div> */}
+      <div className="absolute inset-0 bg-navy-900 opacity-60"></div>
 
      <div className='z-10  text-2xl md:text-4xl  text-left capitalize  text-pink-600 font-sans bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 font-bold  lg:text-5xl '>
        Welcome to  <br /> 
