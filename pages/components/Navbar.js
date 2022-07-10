@@ -73,9 +73,9 @@ export default function Navbar({props}) {
     runBackgroundColorLogic();
     return () => {
       window.removeEventListener("scroll", getScroll);
-      // router.events.off('routeChangeStart', handleStart)
+      router.events.off('routeChangeStart', handleStart)
     };
-  }, [fixed, scrollY, background]);
+  }, [fixed, scrollY, background, router.asPath, router.pathname, router.events]);
 
 
   // capitalisze first string 

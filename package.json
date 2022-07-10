@@ -16,7 +16,7 @@
     "embla-carousel-react": "^7.0.0-rc01",
     "flag-icons": "^6.4.5",
     "flowbite": "^1.4.7",
-    "flowbite-react": "^0.1.0",
+    "flowbite-react": "^0.0.27",
     "html-react-parser": "^3.0.0",
     "next": "12.1.6",
     "next-themes": "^0.2.0",

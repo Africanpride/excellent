@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <>
 
-   { pathname === '/' ?  null : <FooterCarousel  />}
+   {/* { pathname === '/' ?  null : <FooterCarousel  />} */}
 
   <footer className="text-white bg-slate-900 lg:grid lg:grid-cols-5">
   <aside className="hidden  lg:relative lg:col-span-2 lg:block">
@@ -63,47 +63,65 @@ const Footer = () => {
         <div>
           <p className="font-medium">Support</p>
           <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
-            <a className="hover:opacity-75" href="/inquiries">
+            <Link  href="/inquiries">              
+              <a className="hover:opacity-75">
               {" "}
               Contact{" "}
             </a>
-            <a className="hover:opacity-75" href="/inquiries">
+            </Link>
+            <Link  href="/inquiries">              
+              <a className="hover:opacity-75">
               {" "}
               FAQs{" "}
             </a>
-            <a className="hover:opacity-75" href="inquiries">
+            </Link>
+            <Link  href="/inquiries">              
+              <a className="hover:opacity-75">
               {" "}
               Live Chat{" "}
             </a>
-            <a className="hover:opacity-75" href="/sitemap">
+            </Link>
+           <Link   href="/sitemap">
+             <a className="hover:opacity-75">
               {" "}
               Sitemap{" "}
             </a>
+            </Link>
           </nav>
         </div>
         <div>
           <p className="font-medium">Popular Destinations</p>
           <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
-            <a className="hover:opacity-75" href="">
+            <Link href="/"> 
+            <a className="hover:opacity-75">
               {" "}
               Johannesburg{" "}
             </a>
-            <a className="hover:opacity-75" href="">
+            </Link>
+            <Link href="/"> 
+            <a className="hover:opacity-75" >
               {" "}
               Lome{" "}
             </a>
-            <a className="hover:opacity-75" href="">
+            </Link>
+           <Link href="/">  
+           <a className="hover:opacity-75" >
               {" "}
               Accra{" "}
             </a>
-            <a className="hover:opacity-75" href="">
+            </Link>
+            <Link href="/"> 
+            <a className="hover:opacity-75">
               {" "}
               Abidjan{" "}
             </a>
-            <a className="hover:opacity-75" href="">
+            </Link>
+            <Link href="/"> 
+            <a className="hover:opacity-75">
               {" "}
               Banjul{" "}
             </a>
+            </Link>
           </nav>
         </div>
       </div>
@@ -111,18 +129,25 @@ const Footer = () => {
     <div className="pt-12 mt-12 border-t border-gray-800">
       <div className="text-sm text-gray-300 sm:items-center sm:justify-between sm:flex">
         <div className="flex space-x-3">
-          <a className="hover:opacity-75" href="">
+          <Link  href="/">
+            
+            <a className="hover:opacity-75">
             {" "}
             Privacy Policy{" "}
           </a>
-          <a className="hover:opacity-75" href="about">
+          </Link>
+          <Link href="/">            
+            <a className="hover:opacity-75">
             {" "}
             Terms &amp; Conditions{" "}
           </a>
-          <a className="hover:opacity-75" href="">
+          </Link>
+         <Link  href="/">          
+           <a className="hover:opacity-75">
             {" "}
             Returns Policy{" "}
           </a>
+          </Link>
           <Link href={asPath} locale="en">
           <a><span className="fi fi-gb mr shadow"></span> </a>
           </Link> 
