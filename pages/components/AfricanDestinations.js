@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import clip from 'text-clipper'
 import Carousel from 'react-multi-carousel'
+import DestinationsCarousel from './DestinationsCarousel'
 
 const accra = clip(`Accra is surrounded by beaches, each of which is unique in its own way. However, they all have one thing in common: cleanliness and safety. The beaches are great for swimming, surfing, and relaxing—and they're also fun! While you're on them, you'll be able to enjoy the beauty of nature around you with no worries about getting caught up in some sort of crime or violence on land or sea.`, 120)
 
@@ -37,71 +38,12 @@ function AfricanDestinations() {
                     entirely different experience, with unique aspects to topography, cuisine, and
                     scenery!</p>
             </div>
-            <div className="flex flex-wrap -m-4">
-
-                <div className="xl:w-1/4 md:w-1/2 p-2">
-                    <div
-                        className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
-                        <Image className="h-40 rounded w-full object-cover object-center mb-6" 
-                        src="/images/destinations/johannesburg.jpg" 
-                        width="720" height="400" 
-                        alt="Johannesburg, South Africa"/>
-
-                        <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">African Destination</h3>
-                        <h2
-                            className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">Welcome to Mzansi</h2>
-                        <p className="leading-relaxed text-base">{`${lagos}`}</p>
-                    </div>
-                </div>
-                <div className="xl:w-1/4 md:w-1/2 p-2">
-                    <div
-                        className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
-                        <Image className="h-40 rounded w-full object-cover object-center mb-6" 
-                        src="/images/destinations/accra.jpg" 
-                        width="721" 
-                        height="401" 
-                        alt="Accra, Ghana"/>
-                        <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">African Destination</h3>
-                        <h2
-                            className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">Best of Accra</h2>
-                        <p className="leading-relaxed text-base">{`${accra}`}</p>
-                    </div>
-                </div>
-                <div className="xl:w-1/4 md:w-1/2 p-2">
-                    <div
-                        className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
-
-                        <Image className="h-40 rounded w-full object-cover object-center mb-6" 
-                        src="/images/destinations/banjul.jpg" 
-                        width="721" 
-                        height="401" 
-                        alt="Banjul, Gambia"/>
-
-                        <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">African Destination</h3>
-                        <h2
-                            className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">White Sands Beach</h2>
-                        <p className="leading-relaxed text-base">{`${banjul}`}</p>
-                    </div>
-                </div>
-                <div className="xl:w-1/4 md:w-1/2 p-2">
-                    <div
-                        className="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
-
-                        <Image className="h-40 rounded w-full object-cover object-center mb-6"
-                        src="/images/destinations/abidjan.jpg" 
-                        width="721" 
-                        height="401" 
-                        alt="Abidjan. Ivory Coast"/>
-
-                        <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">African Destination</h3>
-                        <h2
-                            className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">Ready for Abidjan?</h2>
-                        <p className="leading-relaxed text-base">{`${abidjan}`}</p>
-                    </div>
-                </div>
-            </div>
+<div>
+<DestinationsCarousel />
+</div>
         </div>
     </section> 
+
     </>
   )
 }

@@ -61,7 +61,7 @@ export default function Navbar({props}) {
     }
 
     const runBackgroundColorLogic =() => {
-      (scrollY > 100) ? setBackground('bg-navy-400 dark:bg-navy-900 shadow-md') : setBackground('bg-transparent')
+      (scrollY > 100) ? setBackground('bg-navy-900 dark:bg-slate-900 shadow-md') : setBackground('bg-transparent')
       return background;
     }
 
@@ -93,16 +93,16 @@ export default function Navbar({props}) {
       <title>Excel Travel Services &#124;	 {capitalizeTitle()}</title>
     </Head>
 
-    <div className={"fixed z-30 inset-0 flex-col justify-center items-center object-fit min-h-screen h-full w-auto bg-slate-600  dark:bg-pink-500 md:mx-auto px-4" + (navbarOpen ? " flex" : " hidden")
+    <div className={"fixed z-30 inset-0 flex-col justify-center items-center object-fit min-h-screen h-full w-auto bg-slate-700  dark:bg-slate-900 md:mx-auto px-4" + (navbarOpen ? " flex" : " hidden")
   } >
 
             <nav className="flex flex-col items-start justify-center text-4xl font-extrabold italic text-white dark:text-navy-800">
-        <Link href="/" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Home</a></Link>     
-        <Link href="/about" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">About</a></Link>     
-        <Link href="/bookings " ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Bookings</a></Link>     
-        <Link href="/tours/" ><a className="p-2 mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Tour Packages</a></Link>     
-        <Link href="/inquiries" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Inquiries</a></Link>     
-        <Link href="/news" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">News</a></Link>     
+        <Link href="/" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  ">Home</a></Link>     
+        <Link href="/about" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  ">About</a></Link>     
+        <Link href="/bookings " ><a className="p-2 mr-5 hover:underline hover:decoration-solid  ">Bookings</a></Link>     
+        <Link href="/tours/" ><a className="p-2 mr-5 hover:underline over:decoration-solid  ">Tour Packages</a></Link>     
+        <Link href="/inquiries" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  ">Inquiries</a></Link>     
+        <Link href="/news" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  ">News</a></Link>     
       </nav>
 
     </div>
@@ -125,13 +125,13 @@ export default function Navbar({props}) {
     </Link>
     </div>
 
-      <nav className="md:mx-auto hidden md:flex flex-wrap items-center justify-center text-white dark:text-navy-800">
-        <Link href="/" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Home</a></Link>     
-        <Link href="/about" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">About</a></Link>     
-        <Link href="/bookings " ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Bookings</a></Link>     
-        <Link href="/tours/" ><a className="mr-5 hover:underline over:decoration-solid  dark:hover:text-white dark:text-white">Tour Packages</a></Link>     
-        <Link href="/inquiries" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">Inquiries</a></Link>     
-        <Link href="/news" ><a className="mr-5 hover:underline hover:decoration-solid  dark:hover:text-white dark:text-white">News</a></Link>     
+      <nav className="md:mx-auto hidden md:flex flex-wrap items-center justify-center text-blue-100 dark:text-white font-bold  ">
+        <Link href="/" ><a className="mr-5 hover:underline hover:decoration-solid  ">Home</a></Link>     
+        <Link href="/about" ><a className="mr-5 hover:underline hover:decoration-solid  ">About</a></Link>     
+        <Link href="/bookings " ><a className="mr-5 hover:underline hover:decoration-solid  ">Bookings</a></Link>     
+        <Link href="/tours/" ><a className="mr-5 hover:underline over:decoration-solid  ">Tour Packages</a></Link>     
+        <Link href="/inquiries" ><a className="mr-5 hover:underline hover:decoration-solid  ">Inquiries</a></Link>     
+        <Link href="/news" ><a className="mr-5 hover:underline hover:decoration-solid  ">News</a></Link>     
       </nav>
 
       <div className='hidden md:flex justify-center items-center'>
@@ -142,7 +142,7 @@ export default function Navbar({props}) {
       <a><span className="fi fi-gb mr-2 shadow"></span> </a>
       </Link> 
               
-      <button className="transition ease-in duration-200 text-white inline-flex items-center bg-navy-800 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-800 rounded text-base mt-4 md:mt-0 shadow"> 
+      <button className="transition ease-in duration-200 text-white inline-flex items-center bg-navy-700 border-0 py-1 px-4 focus:outline-none hover:bg-navy-600 rounded text-base mt-4 md:mt-0 shadow"> 
       <Link href="/bookings">
           <a className='inline-flex items-center justify-between text-md'>Book Now &nbsp; <ArrowCircleRightIcon className='h-5 w-5' /> </a>
       </Link>

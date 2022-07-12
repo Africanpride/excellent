@@ -5,6 +5,7 @@ import Layout from './components/layout'
 import AfricanDestinations from './components/AfricanDestinations'
 import OfferUp from './components/OfferUp'
 import HomePageTourIntro from './components/HomePageTourIntro'
+import DestinationsCarousel from './components/DestinationsCarousel'
 
 
 export default function Home() 
@@ -37,6 +38,7 @@ export default function Home()
    </main>
     <HomePageTourIntro />
    <AfricanDestinations />
+
     </>
   )
 }
