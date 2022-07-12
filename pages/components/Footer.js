@@ -42,21 +42,11 @@ const Footer = () => {
           <li>Weekend: 10am - 8pm</li>
         </ul>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-16 pt-16  space-x-3 justify-center sm:justify-start">
-        <a className="text-gray-400">
-        <FontAwesomeIcon icon={faFacebookF} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon>
-        </a>
-        <a className="ml-3 text-gray-400">
-        <FontAwesomeIcon icon={faTwitter} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon>
-        </a>
-        <a className="ml-3 text-gray-400">
-        <FontAwesomeIcon icon={faInstagram} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon>
-        </a>
-        <a className="ml-3 text-gray-400">
-        <FontAwesomeIcon icon={faLinkedin} className="text-gray-300 text-lg ml-2 "></FontAwesomeIcon>
-        </a>
-        <a className="ml-3 text-gray-400">
-        <FontAwesomeIcon icon={faPinterest} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon>
-        </a>
+        <Link href="https://www.facebook.com/exceltravelservices"><a className="text-gray-400"><FontAwesomeIcon icon={faFacebookF} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon></a></Link>
+        <Link href="https://twitter.com/exceltravelserv"><a className="ml-3 text-gray-400"><FontAwesomeIcon icon={faTwitter} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon></a></Link>
+        <Link href="https://twitter.com/exceltravelserv"><a className="ml-3 text-gray-400"><FontAwesomeIcon icon={faInstagram} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon></a></Link>
+        <Link href="https://www.linkedin.com/in/adjoavi-dossekpli-333552135"><a className="ml-3 text-gray-400"><FontAwesomeIcon icon={faLinkedin} className="text-gray-300 text-lg ml-2 "></FontAwesomeIcon></a></Link>
+        <Link href="https://pin.it/4E7IezJ"><a className="ml-3 text-gray-400"><FontAwesomeIcon icon={faPinterest} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon></a></Link>
       </span>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -95,7 +85,7 @@ const Footer = () => {
             <Link href="/"> 
             <a className="hover:opacity-75">
               {" "}
-              Johannesburg{" "}
+              Lagos{" "}
             </a>
             </Link>
             <Link href="/"> 
@@ -158,7 +148,7 @@ const Footer = () => {
         <p className="mt-4 sm:mt-0">&copy;  { new Date().getFullYear() }. Excel Travel Services</p>
       </div>
       <p className="mt-8 text-xs text-gray-500 text-justify">
-        {`If you are experiencing any issues with our platform, have a suggestion for a new feature, or would like to share your thoughts on anything else related to Excel Travel Services, please click here to get in touch. Your feedback helps us continuously improve our product and create the best possible experience for you. We take protecting your personal information very seriously! For details concerning how we use and protect your personal information, please see here. When you use our services, we may collect information using cookies. Something you eat? Not in this case; cookies are small data files that are stored in a user’s browser when they visit a website. The use of cookies allows us to offer you a more personalized experience on our site - win-win situation, right? For more information on this, please see here.`}
+        {`If you are experiencing any issues with our platform, have a suggestion for a new feature, or would like to share your thoughts on anything else related to Excel Travel Services, please ${'<Link href="/inquiries">click</Link>'} here to get in touch. Your feedback helps us continuously improve our product and create the best possible experience for you. We take protecting your personal information very seriously! For details concerning how we use and protect your personal information, please see here. When you use our services, we may collect information using cookies. Something you eat? Not in this case; cookies are small data files that are stored in a user’s browser when they visit a website. The use of cookies allows us to offer you a more personalized experience on our site - win-win situation, right? For more information on this, please see here.`}
       </p>
     </div>
   </div>
