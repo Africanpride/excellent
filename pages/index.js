@@ -29,12 +29,12 @@ export default function Home()
        </div> 
     </div>
 
-    <div className='hidden md:flex container wx-auto absolute left-10 -bottom-16 w-full rounded-md justify-evenly '>
+    {/* <div className='hidden md:flex container wx-auto absolute left-10 -bottom-16 w-full rounded-md justify-evenly '>
       <span className=''><OfferUp serviceAmount={'$599'} serviceIntro={'Flights'} /></span>
       <span className=''><OfferUp serviceIntro={'Hotels'} serviceAmount={'$99'}  /></span>
       <span className=''><OfferUp serviceIntro='Car Rentals' serviceAmount={'$199'}  /></span>
       <span className=''><OfferUp serviceIntro='Tours' serviceAmount={'$799'} /></span>      
-    </div>
+    </div> */}
    </main>
     <HomePageTourIntro />
    <AfricanDestinations />

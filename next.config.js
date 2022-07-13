@@ -15,7 +15,8 @@ module.exports = nextTranslate({
     'cdn.pixabay.com',
     'dummyimage.com',
     'placehold.it',
-    'source.unsplash.com'
+    'source.unsplash.com',
+    'https://helios-i.mashable.com'
     ],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

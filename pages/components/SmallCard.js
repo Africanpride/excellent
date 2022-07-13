@@ -1,23 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import clip from 'text-clipper'
 
-const SmallCard = () => {
+const SmallCard = (props) => {
   return (
     <>
     <div className="hover:bg-blue-100 cursor-pointer p-4 m-2 bg-white shadow-xl max-w-xl rounded-xl flex justify-start dark:bg-gray-800 md:flex-row flex-col gap-4">
   <div className="relative">
-    <img src="/images/landscape/1.jpg" 
-    className="rounded-xl w-full md:w-auto md:max-h-40"
+
+    
+  
+
+    <img src={props.imgSrc}
+    className=" w-full h-full md:w-72  object-cover md:rounded-lg "
     alt="landscape" 
     />
-    <span className="px-2 py-1 text-white bg-gray-700 text-xs rounded absolute right-2 bottom-2 bg-opacity-50">
+      
+    {/* <span className="px-2 py-1 text-white bg-gray-700 text-xs rounded absolute right-2 bottom-2 bg-opacity-50">
       7 min
-    </span>
+    </span> */}
   </div>
   <div className="flex flex-col justify-between">
     <div className="flex items-start justify-between text-gray-700 dark:text-white my-2 md:m-0">
-      <p className="text-xl leading-5">
-        How to travel arround the world without any money
+      <p className="text-md leading-5">
+        {props.title}
       </p>
       <button className="text-red-400 hover:text-red-600">
         <svg width={25} height={25} fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -50,12 +56,12 @@ const SmallCard = () => {
       </div>
       <div className="flex flex-col items-start justify-center ml-2">
         <span className="text-gray-600 dark:text-gray-200 text-sm flex items-center">
-          Charlie Rabiller
+         {props.author}
           <span className="w-2 h-2 block bg-green-500 rounded-full ml-1">
           </span>
         </span>
         <span className="text-gray-400 text-xs">
-          1 week ago
+          {props.date}
         </span>
       </div>
     </div>
