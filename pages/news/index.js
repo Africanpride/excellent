@@ -1,7 +1,7 @@
 import React from 'react'
-import BigCard from './components/BigCard';
-import Heading from './components/Heading';
-import SmallCard from './components/SmallCard';
+import BigCard from '../components/BigCard';
+import Heading from '../components/Heading';
+import SmallCard from '../components/SmallCard';
 
 
 export default function News({title = 'News & Articles'}) {
