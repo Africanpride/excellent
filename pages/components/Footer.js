@@ -119,20 +119,20 @@ const Footer = () => {
     <div className="pt-12 mt-12 border-t border-gray-800">
       <div className="text-sm text-gray-300 sm:items-center sm:justify-between sm:flex">
         <div className="flex space-x-3">
-          <Link  href="/">
+          <Link  href="/privacy">
             
             <a className="hover:opacity-75">
             {" "}
             Privacy Policy{" "}
           </a>
           </Link>
-          <Link href="/">            
+          <Link href="/terms">            
             <a className="hover:opacity-75">
             {" "}
             Terms &amp; Conditions{" "}
           </a>
           </Link>
-         <Link  href="/">          
+         <Link  href="/privacy">          
            <a className="hover:opacity-75">
             {" "}
             Returns Policy{" "}

@@ -6,10 +6,16 @@ import AfricanDestinations from './components/AfricanDestinations'
 import OfferUp from './components/OfferUp'
 import HomePageTourIntro from './components/HomePageTourIntro'
 import DestinationsCarousel from './components/DestinationsCarousel'
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+// import { Toast, HiCheck } from 'flowbite-react'
 
 
 export default function Home() 
 {  
+
+
+
   return (
     <>
     <main 

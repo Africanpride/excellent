@@ -6,6 +6,7 @@ import placeholder from '/public/assets/722x402.png'
 import { WhyExcel } from './WhyExcel'
 import useTranslation from 'next-translate/useTranslation'
 import BigCard from './BigCard'
+import clip from 'text-clipper'
 
 const AboutCTA = ({}) => {
 
@@ -30,7 +31,7 @@ const AboutCTA = ({}) => {
     <div className="flex flex-wrap  pt-5 mt-5">
       <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6  border-opacity-60">
         <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">How to book</h2>
-        <p className="leading-relaxed text-base mb-4">Booking a tour with us is simple and can be completed within minutes. Click <span className='text-blue-800 '><Link href="/tours" >Tour Packages</Link>  </span> menu above and choose a package. </p>
+        <p className="leading-relaxed text-base mb-4">{clip(`Booking a tour with us is simple and can be completed within minutes. Click Tour Packages menu above and choose a package.`,150) }</p>
         <a className="text-blue-400 inline-flex items-center"><Link href="/tours" >Learn More</Link>
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -39,7 +40,7 @@ const AboutCTA = ({}) => {
       </div>
       <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 md:border-l-2  border-gray-200 border-opacity-60 dark:border-gray-800">
         <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Trip Planning Assistance</h2>
-        <p className="leading-relaxed text-base mb-4">We are ready to assist you in everyway as you plan the trip of your dream. Get in touch with us through our customer service chanels and social media. </p>
+        <p className="leading-relaxed text-base mb-4">{clip(`We are ready to assist you in everyway as you plan the trip of your dream. Get in touch with us through our customer service chanels and social media.`,150)} </p>
         <a className="text-blue-400 inline-flex items-center"><Link href="/inquiries" >Learn More</Link>
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -48,16 +49,16 @@ const AboutCTA = ({}) => {
       </div>
       <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 md:border-l-2  border-gray-200 border-opacity-60  dark:border-gray-800">
         <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Unbeatable Tours</h2>
-        <p className="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-        <a className="text-blue-400 inline-flex items-center">Learn More
+        <p className="leading-relaxed text-base mb-4">{clip(`With the greatest small group trip, you'll experience local transportation. Affordable vacation packages and a once-in-a-lifetime experience Order an Excel Travel Services tour right now.`, 150)}</p>
+        <a className="text-blue-400 inline-flex items-center"><Link href="/tours" >Learn More</Link>
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
         </a>
       </div>
       <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 md:border-l-2  border-gray-200 border-opacity-60  dark:border-gray-800">
-        <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Cheap but Classy</h2>
-        <p className="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Informative Travel News</h2>
+        <p className="leading-relaxed text-base mb-4">{clip(`Learn about noteworthy global events, lavish travel discounts, safety advice, and more. Visit the news section of Excel Travel Services to view the most recent updates about foreign travel.`,150)}.</p>
         <a className="text-blue-400 inline-flex items-center">Learn More
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -65,13 +66,13 @@ const AboutCTA = ({}) => {
         </a>
       </div>
     </div>
-    {/* <button className="flex mx-auto mt-16 text-gray-600 bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button> */}
+
   </div>
 </section>
 
 
 
-<section className='bg-white dark:text-gray-400 dark:bg-gray-900 dark:body-font h-auto w-full md:mx-auto  px-4'>
+{/* <section className='bg-white dark:text-gray-400 dark:bg-gray-900 dark:body-font h-auto w-full md:mx-auto  px-4'>
 
   <div className="container md:px-5 py-5 md:py-24 mx-auto">
     <div className="flex flex-wrap -m-4">
@@ -183,7 +184,7 @@ const AboutCTA = ({}) => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 
 

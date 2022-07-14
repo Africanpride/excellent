@@ -8,6 +8,8 @@ const test = props => {
 }
 
 export default test
+
+//Cookies are small files that are stored on your browser. We use cookies and similar technologies to ensure our website works properly.
 // import React from 'react'
 // import Heading from '../components/Heading';
 // import NewsCard from '../components/NewsCard';
