@@ -6,6 +6,7 @@ import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 import { useRouter } from 'next/router'
 import BigCard from './components/BigCard';
+import { NextSeo } from 'next-seo'
 
 export default function Inquiries() {
 
@@ -15,6 +16,11 @@ export default function Inquiries() {
   return (
 
     <>
+          <NextSeo
+        title="Excel Travel Services"
+        description="Welcome to Excel travel Services. We are your AfricanTour Experts. Book yourflights, Hotels, Cars with us. We are the best in the world."
+        />
+
     <Heading title={'Help & Inquiries'}  imageSrc={'/images/cards/holiday3.jpg'} />
     
 <div className=''  >

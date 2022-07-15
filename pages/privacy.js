@@ -1,5 +1,6 @@
 import React from 'react'
 import Heading from './components/Heading';
+import { NextSeo } from 'next-seo'
 
 const privacy = () => {
   return (
@@ -7,6 +8,10 @@ const privacy = () => {
  
 
     <>
+          <NextSeo
+        title="Excel Travel Services"
+        description="Welcome to Excel travel Services. We are your AfricanTour Experts. Book yourflights, Hotels, Cars with us. We are the best in the world."
+/>
     <Heading 
     title={'Privacy Policy'} 
     subtitle={'You can read our privacy statement to learn more about the data we gather, why we collect it, and how we manage, edit, export, and delete this data.'} 

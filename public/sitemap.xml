@@ -2,79 +2,79 @@
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
     <loc>http://localhost:3000/404</loc>
-    <lastmod>2022-07-15T15:00:20.629Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.818Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/about</loc>
-    <lastmod>2022-07-15T15:00:20.629Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.818Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/bookings</loc>
-    <lastmod>2022-07-15T15:00:20.629Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.818Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000</loc>
-    <lastmod>2022-07-15T15:00:20.629Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.818Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/inquiries</loc>
-    <lastmod>2022-07-15T15:00:20.629Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.818Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/privacy</loc>
-    <lastmod>2022-07-15T15:00:20.629Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.818Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/terms</loc>
-    <lastmod>2022-07-15T15:00:20.629Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.818Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/news/index</loc>
-    <lastmod>2022-07-15T15:00:20.629Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.818Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/tours/egypt-5-days-4-nights-luxury-trip</loc>
-    <lastmod>2022-07-15T15:00:20.629Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.818Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/tours/egypt-7-days-6-nights-luxury-trip</loc>
-    <lastmod>2022-07-15T15:00:20.630Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.819Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/tours/egypt-tour-yoga-sahara-trip</loc>
-    <lastmod>2022-07-15T15:00:20.630Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.819Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/tours/index</loc>
-    <lastmod>2022-07-15T15:00:20.630Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.819Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/tours/togo-ghana-adventure-and-culinary-trip</loc>
-    <lastmod>2022-07-15T15:00:20.630Z</lastmod>
+    <lastmod>2022-07-15T16:37:35.819Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

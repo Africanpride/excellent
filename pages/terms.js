@@ -1,9 +1,13 @@
 import React from 'react'
 import Heading from './components/Heading'
+import { NextSeo } from 'next-seo'
 
 const terms = () => {
   return (
     <>
+          <NextSeo
+        title="Excel Travel Services"
+        description="Welcome to Excel travel Services. We are your AfricanTour Experts. Book yourflights, Hotels, Cars with us. We are the best in the world." />
     <Heading title={'Terms & Conditions'} subtitle={`These Terms and Conditions govern the use of all services offered and operated. Kindly appraise yourself with the information presented below `} imageSrc={'/images/cards/holiday5.jpg'}  />
     <div className="container mx-auto px-10 py-10 my-5 font-sans  text-slate-900 dark:text-white dark:bg-slate-800 bg-gray-100 rounded-xl ">
 
