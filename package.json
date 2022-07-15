@@ -21,6 +21,7 @@
     "html-react-parser": "^3.0.0",
     "newsapi": "^2.4.1",
     "next": "12.1.6",
+    "next-seo": "^5.4.0",
     "next-themes": "^0.2.0",
     "next-translate": "^1.4.0",
     "react": "18.1.0",

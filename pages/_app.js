@@ -9,6 +9,8 @@ import * as gtag from '../lib/ga/gtag'
  import "@fortawesome/fontawesome-svg-core/styles.css";
  import { config } from "@fortawesome/fontawesome-svg-core";
 
+ import { DefaultSeo } from 'next-seo'
+ import SEO from '../next-seo.config'
 
 
  // Dark Mode
@@ -41,6 +43,7 @@ export default function MyApp({ Component, pageProps }) {
   
   return (
     <>
+    <DefaultSeo {...SEO} />
     <ThemeProvider enableSystem={true} attribute="class">  
     <Layout>
      <Component {...pageProps} />

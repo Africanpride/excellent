@@ -8,16 +8,43 @@ import HomePageTourIntro from './components/HomePageTourIntro'
 import DestinationsCarousel from './components/DestinationsCarousel'
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { NextSeo } from 'next-seo'
+
 // import { Toast, HiCheck } from 'flowbite-react'
 
 
 export default function Home() 
 {  
-
-
-
   return (
     <>
+
+    <NextSeo
+        title="Excel Travel Services"
+        description="This will be the page meta description"
+        canonical="https://www.exceltravelservices.com/"
+        openGraph={{
+          url: 'https://www.exceltravelservices.com/',
+          title: 'Open Graph Title',
+          description: 'Open Graph Description',
+          images: [
+            {
+              url: 'https://www.exceltravelservices.com/og-image-01.jpg',
+              width: 800,
+              height: 600,
+              alt: 'Og Image Alt',
+            },
+            {
+              url: 'https://www.exceltravelservices.com/og-image-02.jpg',
+              width: 900,
+              height: 800,
+              alt: 'Og Image Alt Second',
+            },
+            { url: 'https://www.exceltravelservices.com/og-image-03.jpg' },
+            { url: 'https://www.exceltravelservices.com/og-image-04.jpg' },
+          ],
+        }}
+      />
+
     <main 
     className='flex flex-col justify-center items-center object-fit h-screen w-full bg-blue-200  dark:bg-black md:mx-auto  px-4'     
     style={{

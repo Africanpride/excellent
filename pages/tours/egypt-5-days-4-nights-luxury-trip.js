@@ -14,6 +14,7 @@ const egyptPackageItem = parse('');
 
 const destinationEgype2 = {
   tourName: 'Egypt: 5 Days, 4 nights Luxury Trip',
+  
   tourOverview: `Egypt is a world-class diving destination. It offers an enormous variety of dive sites and dive operators, ranging from Red Sea shore sites to deep-diving liveaboard boats. There are many different types of diving available: wreck diving, wall diving, drift dives and night or cave diving. The Red Sea has many high quality dive centers offering PADI certification courses at affordable prices. One of the best things to do in Egypt is visit pyramids. Pyramids are very interesting, because they have been built by many people’s hands a long time ago. There are many pyramids in Egypt, such as the Great Pyramid of Giza and others (there is no place on earth that has so many pyramids)`,
 
   tourOverview2: `The pyramids in egypt took 20 years to build and it was covered with polished limestone blocks that were cut into shape using copper chisels during construction. The Egyptians believed that after death they would go through several stages before reaching heaven or hell depending on how good their life had been while they were alive!`,
@@ -25,18 +26,17 @@ const destinationEgype2 = {
   tourImage: `/images/cards/egypt3.jpg`,
 
   tourHighlight: [
-    'Akwapim hills',
-    'Lome Beach',
-    'Aneho Beach',
-    'Togo Museum',
-    'Kpalime City Tour',
-    'Keta Beaches and St. Paul Lighthouse',
-    'W.E. B. Du Bois Centre',
-    'Kwame Nkrumah Mausoleum',
-    'Agou and Yikpa Waterfalls',
-    'Agou and Yikpa Waterfalls',
-    'Agbodrafo Slave house and Aného',
+    'The largest temple in Egypt',
+    'Karnak Temples',
+    'Valley of the Kings',
+    'Queen Hatshepsut’s Mortuary Temple',
+    'the temple of Komombo',
+    'Philae Temple',
+    'the magnificent temples of Ramses II',
+    'Abu Simbel',
+    'tour to the East Bank'
   ],
+
   tourPayment: 'Payment is required upon arrival',
   tourPaymentLogos: <PaymentLogos />,
 

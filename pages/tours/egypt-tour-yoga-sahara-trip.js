@@ -38,7 +38,7 @@ const destinationEgype1 = {
 
   tourDuration: `11 days, 10 nights`,
 
-  tourImage: `/images/cards/egypt_yoga.jpg`,
+  tourImage: `/images/yoga/yoga2.jpg`,
 
   tourHighlight: ['Tourism Guide', 'Reception and Travel', 'All Transfers', 'All Entrance and Tickets', 'Two Flights inside Egypt','All Meals During the Trip'],
  
