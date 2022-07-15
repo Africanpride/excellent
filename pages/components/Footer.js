@@ -114,9 +114,28 @@ const Footer = () => {
             </Link>
           </nav>
         </div>
+
       </div>
     </div>
-    <div className="pt-12 mt-12 border-t border-gray-800">
+    <div className="block h-auto pt-4  ">
+
+<p className="font-medium">
+  <span className="text-xs tracking-widest uppercase ">Accreditation By:</span>
+</p>
+<ul className=' flex items-center justify-start w-full mt-2 '>
+  <li className="w-auto ">    
+    <img src="/images/accreditation/accred1.jpg" style={{ height:"50px"  }}  className="h-15 w-auto pr-2" alt="Accredited"/>              
+  </li>
+  <li className="w-auto ">    
+    <img src="/images/accreditation/accred2.jpg" style={{ height:"50px"  }}   className="h-15 w-auto pr-2" alt="Accredited"/>              
+  </li>
+  <li className="w-auto  ">    
+    <img src="/images/accreditation/accred3_bb.jpg" style={{ height:"50px"  }} className="h-15  w-auto pr-2" alt="Accredited"/>              
+  </li>            
+</ul>
+</div>
+
+    <div className="pt-7 mt-7 border-t border-gray-800">
       <div className="text-sm text-gray-300 sm:items-center sm:justify-between sm:flex">
         <div className="flex space-x-3">
           <Link  href="/privacy">
@@ -132,12 +151,12 @@ const Footer = () => {
             Terms &amp; Conditions{" "}
           </a>
           </Link>
-         <Link  href="/privacy">          
+         {/* <Link  href="/privacy">          
            <a className="hover:opacity-75">
             {" "}
             Returns Policy{" "}
           </a>
-          </Link>
+          </Link> */}
           <Link href={asPath} locale="en">
           <a><span className="fi fi-gb mr shadow"></span> </a>
           </Link> 
@@ -145,10 +164,10 @@ const Footer = () => {
           <a><span className="fi fi-fr  shadow"></span></a>
           </Link>
         </div>
-        <p className="mt-4 sm:mt-0">&copy;  { new Date().getFullYear() }. Excel Travel Services</p>
+        <p className="mt-4 sm:mt-0">&copy;  { new Date().getFullYear() } Excel Travel Services. <span className="">All Rights Reserved.</span></p>
       </div>
       <p className="mt-8 text-xs text-gray-500 text-justify">
-        {`If you are experiencing any issues with our platform, have a suggestion for a new feature, or would like to share your thoughts on anything else related to Excel Travel Services, please ${'<Link href="/inquiries">click</Link>'} here to get in touch. Your feedback helps us continuously improve our product and create the best possible experience for you. We take protecting your personal information very seriously! For details concerning how we use and protect your personal information, please see here. When you use our services, we may collect information using cookies. Something you eat? Not in this case; cookies are small data files that are stored in a user’s browser when they visit a website. The use of cookies allows us to offer you a more personalized experience on our site - win-win situation, right? For more information on this, please see here.`}
+        {`If you are experiencing any issues with our platform, have a suggestion for a new feature, or would like to share your thoughts on anything else related to Excel Travel Services, please `} <span className="dark:text-navy-300 text-navy-600 "><Link href="/inquiries">click here</Link> </span> {` to get in touch. Your feedback helps us continuously improve our product and create the best possible experience for you. We take protecting your personal information very seriously! For details concerning how we use and protect your personal information, please see here. When you use our services, we may collect information using cookies. Something you eat? Not in this case; cookies are small data files that are stored in a user’s browser when they visit a website. The use of cookies allows us to offer you a more personalized experience on our site - win-win situation, right? For more information on this, please see here.`}
       </p>
     </div>
   </div>

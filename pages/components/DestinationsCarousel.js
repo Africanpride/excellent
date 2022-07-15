@@ -26,7 +26,7 @@ const responsive = {
             max: 1024,
             min: 464
         },
-        items: 2
+        items: 1
     },
     mobile: {
         breakpoint: {
@@ -56,11 +56,11 @@ const DestinationsCarousel = () => {
 
     return ( <> <Carousel
         additionalTransfrom={0}
-        arrows={false}
+        arrows={true}
         autoPlay
         autoPlaySpeed={6000}
         centerMode={false}
-        className="bg-transparent dark:bg-slate-900 "
+        className="bg-transparent "
         containerClass="container-with-dots"
         dotListClass=""
         draggable
@@ -74,7 +74,7 @@ const DestinationsCarousel = () => {
         renderButtonGroupOutside={false}
         renderDotsOutside={false}
         responsive={responsive}
-        rewind={false}
+        rewind={true}
         rewindWithAnimation={false}
         rtl={false}
         shouldResetAutoplay
@@ -83,9 +83,9 @@ const DestinationsCarousel = () => {
         slidesToSlide={2}
         swipeable>
 
-        <Link href="/news">
+       
             <div
-                className="bg-gray-100 cursor-pointer  p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
+                className="bg-gray-100   p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
                 <Image
                     className="h-40 rounded w-full object-cover object-center mb-6"
                     src="/images/destinations/kigali.jpg"
@@ -98,10 +98,10 @@ const DestinationsCarousel = () => {
                     className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">Welcome to Rwanda</h2>
                 <p className="leading-relaxed text-base">{`${kigali}`}</p>
             </div>
-        </Link>
-        <Link href="/news">
+     
+       
             <div
-                className="bg-gray-100 cursor-pointer  p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
+                className="bg-gray-100   p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
                 <Image
                     className="h-40 rounded w-full object-cover object-center mb-6"
                     src="/images/destinations/lagos.jpg"
@@ -114,10 +114,10 @@ const DestinationsCarousel = () => {
                     className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">Welcome to Lagos</h2>
                 <p className="leading-relaxed text-base">{`${lagos}`}</p>
             </div>
-        </Link>
-        <Link href="/news">
+     
+       
             <div
-                className="bg-gray-100 cursor-pointer  p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
+                className="bg-gray-100   p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
                 <Image
                     className="h-40 rounded w-full object-cover object-center mb-6"
                     src="/images/destinations/johannesburg.jpg"
@@ -130,11 +130,11 @@ const DestinationsCarousel = () => {
                     className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">Welcome to Mzansi</h2>
                 <p className="leading-relaxed text-base">{`${johannesburg}`}</p>
             </div>
-        </Link>
-        <Link href="/news">
+     
+       
 
             <div
-                className="bg-gray-100 cursor-pointer  p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
+                className="bg-gray-100   p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
                 <Image
                     className="h-40 rounded w-full object-cover object-center mb-6"
                     src="/images/destinations/accra.jpg"
@@ -146,11 +146,11 @@ const DestinationsCarousel = () => {
                     className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">Best of Accra</h2>
                 <p className="leading-relaxed text-base">{`${accra}`}</p>
             </div>
-        </Link>
-        <Link href="/news">
+     
+       
 
             <div
-                className="bg-gray-100 cursor-pointer  p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
+                className="bg-gray-100   p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
 
                 <Image
                     className="h-40 rounded w-full object-cover object-center mb-6"
@@ -164,11 +164,11 @@ const DestinationsCarousel = () => {
                     className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">White Sands Beach</h2>
                 <p className="leading-relaxed text-base">{`${banjul}`}</p>
             </div>
-        </Link>
-        <Link href="/news">
+     
+       
 
             <div
-                className="bg-gray-100 cursor-pointer  p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
+                className="bg-gray-100   p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
 
                 <Image
                     className="h-40 rounded w-full object-cover object-center mb-6"
@@ -182,10 +182,10 @@ const DestinationsCarousel = () => {
                     className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">Ready for Abidjan?</h2>
                 <p className="leading-relaxed text-base">{`${abidjan}`}</p>
             </div>
-        </Link>
-        <Link href="/news">
+     
+       
             <div
-                className="bg-gray-100 cursor-pointer  p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
+                className="bg-gray-100   p-6 rounded-lg shadow-md dark:bg-gray-800 dark:bg-opacity-40">
 
                 <Image
                     className="h-40 rounded w-full object-cover object-center mb-6"
@@ -199,7 +199,7 @@ const DestinationsCarousel = () => {
                     className="text-lg text-gray-900 dark:text-white font-medium title-font mb-4">Ready for lome?</h2>
                 <p className="leading-relaxed text-base">{`${lome}`}</p>
             </div>
-        </Link>
+     
 
     </Carousel> </>
   )

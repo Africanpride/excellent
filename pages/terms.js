@@ -5,7 +5,7 @@ const terms = () => {
   return (
     <>
     <Heading title={'Terms & Conditions'} subtitle={`These Terms and Conditions govern the use of all services offered and operated. Kindly appraise yourself with the information presented below `} imageSrc={'/images/cards/holiday5.jpg'}  />
-    <div className='container mx-auto px-10'>
+    <div className="container mx-auto px-10 py-10 my-5 font-sans  text-slate-900 dark:text-white dark:bg-slate-800 bg-gray-100 rounded-xl ">
 
     <div className="font-bold text-xl ">Carefully Read The Following</div> <br />
 

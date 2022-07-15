@@ -59,7 +59,7 @@ const AboutCTA = ({}) => {
       <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 md:border-l-2  border-gray-200 border-opacity-60  dark:border-gray-800">
         <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2">Informative Travel News</h2>
         <p className="leading-relaxed text-base mb-4">{clip(`Learn about noteworthy global events, lavish travel discounts, safety advice, and more. Visit the news section of Excel Travel Services to view the most recent updates about foreign travel.`,150)}.</p>
-        <a className="text-blue-400 inline-flex items-center">Learn More
+        <a className="text-blue-400 inline-flex items-center"><Link href="/news" >Learn More</Link>
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
