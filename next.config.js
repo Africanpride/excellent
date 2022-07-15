@@ -31,5 +31,10 @@ module.exports = nextTranslate({
     "/about": ["about"]
   },
   },
-
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./scripts/sitemap-generator.js");
+    }
+    return config;
+  },
 })

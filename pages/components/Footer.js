@@ -71,7 +71,7 @@ const Footer = () => {
               Live Chat{" "}
             </a>
             </Link>
-           <Link   href="/sitemap">
+           <Link   href="/sitemap.xml">
              <a className="hover:opacity-75">
               {" "}
               Sitemap{" "}
