@@ -44,7 +44,7 @@ const Footer = () => {
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-16 pt-16  space-x-3 justify-center sm:justify-start">
         <Link href="https://www.facebook.com/exceltravelservices"><a className="text-gray-400"><FontAwesomeIcon icon={faFacebookF} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon></a></Link>
         <Link href="https://twitter.com/exceltravelserv"><a className="ml-3 text-gray-400"><FontAwesomeIcon icon={faTwitter} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon></a></Link>
-        <Link href="https://twitter.com/exceltravelserv"><a className="ml-3 text-gray-400"><FontAwesomeIcon icon={faInstagram} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon></a></Link>
+        <Link href="https://instagram.com/exceltravelsservices"><a className="ml-3 text-gray-400"><FontAwesomeIcon icon={faInstagram} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon></a></Link>
         <Link href="https://www.linkedin.com/in/adjoavi-dossekpli-333552135"><a className="ml-3 text-gray-400"><FontAwesomeIcon icon={faLinkedin} className="text-gray-300 text-lg ml-2 "></FontAwesomeIcon></a></Link>
         <Link href="https://pin.it/4E7IezJ"><a className="ml-3 text-gray-400"><FontAwesomeIcon icon={faPinterest} className="text-gray-300 text-lg ml-2"></FontAwesomeIcon></a></Link>
       </span>
