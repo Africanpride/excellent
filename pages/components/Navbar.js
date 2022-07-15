@@ -96,7 +96,7 @@ export default function Navbar({props}) {
     <div className={"fixed z-30 inset-0 flex-col justify-center items-center object-fit min-h-screen h-full w-auto bg-slate-700  dark:bg-slate-900 md:mx-auto px-4" + (navbarOpen ? " flex" : " hidden")
   } >
 
-            <nav className="flex flex-col items-start justify-center text-4xl font-extrabold italic text-white dark:text-navy-800">
+      <nav className="flex flex-col items-start justify-center text-4xl font-extrabold italic text-white dark:text-navy-300">
         <Link href="/" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  ">Home</a></Link>     
         <Link href="/about" ><a className="p-2 mr-5 hover:underline hover:decoration-solid  ">About</a></Link>     
         <Link href="/bookings " ><a className="p-2 mr-5 hover:underline hover:decoration-solid  ">Bookings</a></Link>     
