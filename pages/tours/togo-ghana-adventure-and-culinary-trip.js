@@ -84,7 +84,7 @@ const TogoGhana = () => {
   White sand can be found on several of the beaches, and seclusion is simple to come by.`;
   return (
     <>
-    <Heading title={`Togo-Ghana Adventures & Culinary Trip`} imageSrc={'/images/tours/elephant2.jpg '} subtitle = {subtitleText}  />
+    <Heading title={`Togo-Ghana Adventures & Culinary Trip`} imageSrc={'/images/tours/elephant2.jpg'} subtitle = {subtitleText}  />
     <div className=" py-10 bg-gray-100 dark:bg-slate-900 ">
         <div className="container mx-auto py-2 ">
           <div className="relative  mx-auto px-4 sm:px-6 lg:px-4 ">
