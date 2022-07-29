@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:gallium-alpine
 
 # Create app directory
 RUN mkdir -p /usr/src/app
