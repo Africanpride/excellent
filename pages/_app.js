@@ -51,7 +51,7 @@ export default function MyApp({ Component, pageProps }) {
     </ThemeProvider>
 
 
-    {/* <Script
+    <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-FKG8VZG7HL`}
       /> 
@@ -67,7 +67,7 @@ export default function MyApp({ Component, pageProps }) {
               page_path: window.location.pathname,
             });
           `,
-        }} */}
+        }} 
       />
       
     </>
