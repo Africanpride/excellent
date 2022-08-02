@@ -53,9 +53,9 @@ export default function MyApp({ Component, pageProps }) {
 
     {/* <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-      /> */}
-    {/* <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=G-FKG8VZG7HL`}
+      /> 
+     <Script
         id="gtag-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -63,12 +63,12 @@ export default function MyApp({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${gtag.GA_TRACKING_ID}', {
+            gtag('config', 'G-FKG8VZG7HL', {
               page_path: window.location.pathname,
             });
           `,
-        }}
-      /> */}
+        }} */}
+      />
       
     </>
   )
