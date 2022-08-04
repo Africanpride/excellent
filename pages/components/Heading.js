@@ -37,7 +37,7 @@ export default function Heading({ title, subtitle, imageSrc = '/static/beach.jpg
                     alt="Excel travel Services Holiday Destination"
                     />
 
-                    <div className="absolute inset-0 bg-gray-900 opacity-70  rounded-xl"></div>
+                    <div className="absolute inset-0 bg-gray-900 opacity-60  rounded-xl"></div>
                 </div>
 
             </div>
