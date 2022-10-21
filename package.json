@@ -1,12 +1,15 @@
 {
   "name": "excel",
   "version": "0.1.0",
+  "homepage": "https://africanpride.github.io/excel-app",
   "private": true,
-"scripts": {
-  "dev": "node server.js",
-  "build": "next build",
-  "start": "next start"
-},
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
@@ -35,6 +38,7 @@
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "^8.5.0",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "postcss-cli": "^9.1.0",
     "tailwindcss": "^3.1.0"
