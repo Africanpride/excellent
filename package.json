@@ -6,7 +6,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "dev": "node server.js",
+    "dev": "next",
     "build": "next build",
     "start": "next start"
   },
